@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn330galhmqto"]
+
+[ext_resource type="PackedScene" uid="uid://dwhdn85erdvqx" path="res://Scenes/background.tscn" id="1_r0lig"]
+
+[node name="menu" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_r0lig")]
+
+[node name="Play_button" type="Button" parent="."]
+offset_left = 384.0
+offset_top = 72.0
+offset_right = 768.0
+offset_bottom = 208.0
+theme_override_font_sizes/font_size = 50
+text = "Play"
+
+[node name="Quit_button" type="Button" parent="."]
+offset_left = 384.0
+offset_top = 440.0
+offset_right = 768.0
+offset_bottom = 576.0
+theme_override_font_sizes/font_size = 50
+text = "Quit
+"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 384.0
+offset_top = 256.0
+offset_right = 768.0
+offset_bottom = 384.0
+theme_override_font_sizes/font_size = 50
+text = "Settings
+"
+
+[connection signal="pressed" from="Play_button" to="Background" method="_on_play_button_pressed"]
+[connection signal="pressed" from="Quit_button" to="Background" method="_on_quit_button_pressed"]

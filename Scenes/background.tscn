@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwhdn85erdvqx"]
+
+[ext_resource type="Script" path="res://Scenes/ParallaxBackground.gd" id="1_l6w4j"]
+[ext_resource type="Texture2D" uid="uid://dwgt37wclc7ia" path="res://Background/oak_wood/background_layer_1.png" id="2_wag52"]
+[ext_resource type="Texture2D" uid="uid://bf1386hi8jbl0" path="res://Background/oak_wood/background_layer_2.png" id="3_aeceb"]
+[ext_resource type="Texture2D" uid="uid://k7jdnm701q0f" path="res://Background/oak_wood/background_layer_3.png" id="4_ewcps"]
+
+[node name="Background" type="ParallaxBackground"]
+script = ExtResource("1_l6w4j")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1151, 0)
+
+[node name="BackgroundLayer1" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("2_wag52")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(1151, 0)
+
+[node name="BackgroundLayer2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("3_aeceb")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1151, 0)
+
+[node name="BackgroundLayer3" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("4_ewcps")
