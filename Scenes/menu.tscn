@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bn330galhmqto"]
+[gd_scene load_steps=3 format=3 uid="uid://bn330galhmqto"]
 
 [ext_resource type="PackedScene" uid="uid://dwhdn85erdvqx" path="res://Scenes/background.tscn" id="1_r0lig"]
+[ext_resource type="PackedScene" uid="uid://ue0w1sfwot62" path="res://Scenes/test_bg.tscn" id="2_vbjdc"]
 
 [node name="menu" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource("1_r0lig")]
+
+[node name="Node2D" parent="Background" instance=ExtResource("2_vbjdc")]
 
 [node name="Play_button" type="Button" parent="."]
 offset_left = 384.0
