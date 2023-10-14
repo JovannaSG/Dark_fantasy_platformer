@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-enum { IDLE, ATTACK, CHASE }
+enum { IDLE, ATTACK, CHASE, DEATH }
 
 var state: int = 0:
 	set(value):
@@ -13,14 +13,18 @@ var state: int = 0:
 			CHASE:
 				chase_state()
 
+@onready
+var animation = $AnimationPlayer
+@onready
+var sprite2d = $AnimatedSprite2D
+
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var chase = false
 var alive = true
 var SPEED = 100
 var player
 var direction
-@onready var animation = $AnimationPlayer
-@onready var sprite2d = $AnimatedSprite2D
+var damage = 15
 
 
 func _ready():
@@ -47,7 +51,7 @@ func _on_player_position_update(player_pos):
 
 func idle_state():
 	animation.play("idle")
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(0.2).timeout
 	$AttackDIrection/AttackRange/CollisionShape2D.disabled = false
 	state = CHASE
 
@@ -77,18 +81,17 @@ func _on_detector_body_exited(body):
 	pass
 
 
-func death():
+func death_state():
 	alive = false
 	animation.play("death")
 	await animation.animation_finished
 	queue_free()
 
 
-func _on_detector_death_2_body_entered(body):
-	pass
-#	death()
-
-
 # Коллизия атаки
 func _on_attack_range_body_entered(body):
 	state = ATTACK
+
+
+func _on_hit_box_area_entered(area):
+	Signals.emit_signal("enemy_attack", damage)

@@ -1,16 +1,22 @@
 extends CharacterBody2D
 
 
-enum { MOVE, ATTACK, ATTACK2, SLIDE }
+signal hp_changed(new_hp)
+
+enum { MOVE, ATTACK, ATTACK2, SLIDE, DAMAGE, DEATH }
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -400.0
 
+@onready
+var animation = $AnimatedSprite2D
+@onready
+var animationPlayer = $AnimationPlayer
+
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-@onready var animation = $AnimatedSprite2D
-@onready var animationPlayer = $AnimationPlayer
-var HP = 100
+var max_HP = 100
+var HP
 var state = MOVE
 var combo = false
 var attack_cooldown = false
@@ -18,7 +24,8 @@ var player_position
 
 
 func _ready():
-	animationPlayer.play("player_stay")
+	Signals.connect("enemy_attack", Callable(self, "_on_taking_damage"))
+	HP = max_HP
 
 
 func _physics_process(delta):
@@ -31,6 +38,10 @@ func _physics_process(delta):
 			attack2_state()
 		SLIDE:
 			slide_state()
+		DAMAGE:
+			damage_state()
+		DEATH:
+			death_state()
 	
 	# Add the gravity.
 	if not is_on_floor():
@@ -44,16 +55,17 @@ func _physics_process(delta):
 	if velocity.y > 0:
 		animationPlayer.play("fall")
 	
-	# Death
-	if HP <= 0:
-		animationPlayer.play("death")
-		await animationPlayer.animation_finished
-		queue_free()
-		get_tree().change_scene_to_file("res://Scenes/menu.tscn")
-	
 	move_and_slide()
 	player_position = self.position
 	Signals.emit_signal("player_position_update", player_position)
+
+
+func death_state():
+	velocity.x = 0
+	animationPlayer.play("death")
+	await animationPlayer.animation_finished
+	queue_free()
+	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
 
 
 func move_state():
@@ -115,3 +127,20 @@ func attack_freeze():
 	attack_cooldown = true
 	await get_tree().create_timer(0.3).timeout
 	attack_cooldown = false
+
+
+func damage_state():
+	velocity.x = 0
+	animationPlayer.play("taking_damage")
+	await animationPlayer.animation_finished
+	state = MOVE
+
+
+func _on_taking_damage(enemy_damage):
+	HP -= enemy_damage
+	if HP <= 0:
+		HP = 0
+		state = DEATH
+	else:
+		state = DAMAGE
+	emit_signal("hp_changed", HP)
