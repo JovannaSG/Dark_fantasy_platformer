@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://pp07bp0arlak"]
+[gd_scene load_steps=39 format=3 uid="uid://pp07bp0arlak"]
 
 [ext_resource type="Script" path="res://Scenes/skeleton.gd" id="1_gfn8l"]
 [ext_resource type="Texture2D" uid="uid://px1m0orlsgdb" path="res://Characters/skeleton/Idle.png" id="1_ufaji"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bneqarmw3xrhg" path="res://Characters/skeleton/Walk.png" id="2_cv4y5"]
 [ext_resource type="Texture2D" uid="uid://blkd81u5cm2d1" path="res://Characters/skeleton/Attack.png" id="2_j0d0x"]
 [ext_resource type="Texture2D" uid="uid://bucvfmi7bvqpa" path="res://Characters/skeleton/Take Hit.png" id="2_rksmt"]
+[ext_resource type="PackedScene" uid="uid://c0oxfbixim7ic" path="res://Scenes/damage_box.tscn" id="7_3pfri"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wf0xb"]
 atlas = ExtResource("2_j0d0x")
@@ -184,8 +185,20 @@ height = 32.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_7ake2"]
 radius = 231.019
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jdjok"]
-size = Vector2(27, 3)
+[sub_resource type="Animation" id="Animation_2p15j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AttackDIrection/DamageBox/HitBox/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_3gfuq"]
 length = 0.8
@@ -212,6 +225,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": ["attack"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AttackDIrection/DamageBox/HitBox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
 }
 
 [sub_resource type="Animation" id="Animation_edxt7"]
@@ -299,6 +324,7 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qyt26"]
 _data = {
+"RESET": SubResource("Animation_2p15j"),
 "attack": SubResource("Animation_3gfuq"),
 "death": SubResource("Animation_edxt7"),
 "idle": SubResource("Animation_7vdk5"),
@@ -320,6 +346,7 @@ autoplay = "idle"
 frame = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(2, 4)
 shape = SubResource("CapsuleShape2D_1cj83")
 
@@ -330,15 +357,6 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
 shape = SubResource("CircleShape2D_7ake2")
-
-[node name="Detector_death2" type="Area2D" parent="."]
-visible = false
-collision_layer = 0
-collision_mask = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector_death2"]
-position = Vector2(2.5, 1)
-shape = SubResource("RectangleShape2D_jdjok")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -352,10 +370,29 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackDIrection/AttackRange"]
+visible = false
 position = Vector2(30, 0)
 shape = SubResource("RectangleShape2D_k3t55")
 
+[node name="DamageBox" parent="AttackDIrection" instance=ExtResource("7_3pfri")]
+
+[node name="HurtBox" parent="AttackDIrection/DamageBox" index="0"]
+collision_layer = 32
+
+[node name="CollisionShape2D" parent="AttackDIrection/DamageBox/HurtBox" index="0"]
+position = Vector2(4, -2)
+
+[node name="HitBox" parent="AttackDIrection/DamageBox" index="1"]
+position = Vector2(4, -1)
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" parent="AttackDIrection/DamageBox/HitBox" index="0"]
+position = Vector2(28, 1)
+
 [connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
 [connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]
-[connection signal="body_entered" from="Detector_death2" to="." method="_on_detector_death_2_body_entered"]
 [connection signal="body_entered" from="AttackDIrection/AttackRange" to="." method="_on_attack_range_body_entered"]
+[connection signal="area_entered" from="AttackDIrection/DamageBox/HitBox" to="." method="_on_hit_box_area_entered"]
+
+[editable path="AttackDIrection/DamageBox"]
