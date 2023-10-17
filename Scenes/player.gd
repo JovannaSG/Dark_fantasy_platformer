@@ -21,6 +21,9 @@ var state = MOVE
 var combo = false
 var attack_cooldown = false
 var player_position
+var damage_basic = 15
+var damage_multiplier = 1
+var damage
 
 
 func _ready():
@@ -43,6 +46,8 @@ func _physics_process(delta):
 		DEATH:
 			death_state()
 	
+	damage = damage_basic * damage_multiplier
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
@@ -51,6 +56,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		animationPlayer.play("jump")
+		await animationPlayer.animation_finished
 
 	if velocity.y > 0:
 		animationPlayer.play("fall")
@@ -81,8 +87,10 @@ func move_state():
 	
 	if direction == -1:
 		animation.flip_h = true
+		$AttackDirection.rotation_degrees = 180
 	elif direction == 1:
 		animation.flip_h = false
+		$AttackDirection.rotation_degrees = 0
 		
 	if Input.is_action_just_released("slide"):
 		state = SLIDE
@@ -102,6 +110,7 @@ func slide_state():
 
 
 func attack_state():
+	damage_multiplier = 1
 	if Input.is_action_just_pressed("attack") and combo == true:
 		state = ATTACK2
 	velocity.x = 0
@@ -112,6 +121,7 @@ func attack_state():
 
 
 func attack2_state():
+	damage_multiplier = 2
 	animationPlayer.play("attack2")
 	await animationPlayer.animation_finished
 	state = MOVE
@@ -137,10 +147,16 @@ func damage_state():
 
 
 func _on_taking_damage(enemy_damage):
+	if state == SLIDE:
+		enemy_damage = 0
+	else:
+		state = DAMAGE
 	HP -= enemy_damage
 	if HP <= 0:
 		HP = 0
 		state = DEATH
-	else:
-		state = DAMAGE
 	emit_signal("hp_changed", HP)
+
+
+func _on_hit_box_area_entered(area):
+	Signals.emit_signal("player_attack", damage)

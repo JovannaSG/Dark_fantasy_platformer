@@ -1484,8 +1484,11 @@ texture = ExtResource("5_3pj0f")
 
 [node name="Enemy" type="Node2D" parent="."]
 
-[node name="Skeleton3" parent="Enemy" instance=ExtResource("7_vn0q5")]
-position = Vector2(256, 448)
+[node name="Skeleton" parent="Enemy" instance=ExtResource("7_vn0q5")]
+position = Vector2(288, 440)
+
+[node name="Skeleton2" parent="Enemy" instance=ExtResource("7_vn0q5")]
+position = Vector2(624, 440)
 
 [node name="Player" type="Node2D" parent="."]
 
