@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-enum { IDLE, ATTACK, CHASE, DEATH }
+enum { IDLE, ATTACK, CHASE, DEATH, DAMAGE, RECOVER }
 
 var state: int = 0:
 	set(value):
@@ -12,6 +12,12 @@ var state: int = 0:
 				attack_state()
 			CHASE:
 				chase_state()
+			DAMAGE:
+				damage_state()
+			DEATH:
+				death_state()
+			RECOVER:
+				recover_state()
 
 @onready
 var animation = $AnimationPlayer
@@ -20,15 +26,17 @@ var sprite2d = $AnimatedSprite2D
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var chase = false
-var alive = true
 var SPEED = 100
 var player
 var direction
-var damage = 15
+var damage = 10
+var HP = 30
+var player_damage
 
 
 func _ready():
 	Signals.connect("player_position_update", Callable(self, "_on_player_position_update"))
+	Signals.connect("player_attack", Callable(self, "_on_damage_taking"))
 
 
 func _physics_process(delta):
@@ -39,9 +47,6 @@ func _physics_process(delta):
 	var player = $"../../Player/Player"
 	var direction = (player.position - self.position).normalized()
 	
-	if state == CHASE:
-		chase_state()
-	
 	move_and_slide()
 
 
@@ -51,16 +56,13 @@ func _on_player_position_update(player_pos):
 
 func idle_state():
 	animation.play("idle")
-	await get_tree().create_timer(0.2).timeout
-	$AttackDIrection/AttackRange/CollisionShape2D.disabled = false
 	state = CHASE
 
 
 func attack_state():
 	animation.play("attack")
 	await animation.animation_finished
-	$AttackDIrection/AttackRange/CollisionShape2D.disabled = true
-	state = IDLE
+	state = RECOVER
 
 
 func chase_state():
@@ -73,6 +75,7 @@ func chase_state():
 		$AttackDIrection.rotation_degrees = 0
 
 
+# 2 метода для преследования
 func _on_detector_body_entered(body):
 	pass
 
@@ -81,8 +84,13 @@ func _on_detector_body_exited(body):
 	pass
 
 
+func recover_state():
+	animation.play("recover")
+	await animation.animation_finished
+	state = IDLE
+
+
 func death_state():
-	alive = false
 	animation.play("death")
 	await animation.animation_finished
 	queue_free()
@@ -93,5 +101,27 @@ func _on_attack_range_body_entered(body):
 	state = ATTACK
 
 
+# Для атаки персонажа
 func _on_hit_box_area_entered(area):
 	Signals.emit_signal("enemy_attack", damage)
+
+
+# При получении урона
+func damage_state():
+	animation.play("takingDamage")
+	await animation.animation_finished
+	state = IDLE
+
+
+func _on_damage_taking(plr_damage):
+	player_damage = plr_damage
+
+
+func _on_hurt_box_area_entered(area):
+	await get_tree().create_timer(0.01).timeout
+	HP -= player_damage
+	if HP <= 0:
+		state = DEATH
+	else:
+		state = IDLE
+		state = DAMAGE

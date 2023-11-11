@@ -3,7 +3,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_nfdn2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_anl7e"]
-radius = 12.0
+radius = 17.0294
 
 [node name="DamageBox" type="Node2D"]
 

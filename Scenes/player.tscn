@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://che456ghxf3fr"]
+[gd_scene load_steps=82 format=3 uid="uid://che456ghxf3fr"]
 
 [ext_resource type="Script" path="res://Scenes/player.gd" id="1_tlyep"]
 [ext_resource type="Texture2D" uid="uid://cg8q4igwh1bi1" path="res://Characters/knight/attack/_Attack2.png" id="2_7f7gi"]
@@ -502,6 +502,18 @@ tracks/2/keys = {
 "method": &"combo_attack"
 }]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AttackDirection/DamageBox/HitBox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
 
 [sub_resource type="Animation" id="Animation_nwpud"]
 length = 0.266667
@@ -528,6 +540,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": ["attack2"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AttackDirection/DamageBox/HitBox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.266667, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, true]
 }
 
 [sub_resource type="Animation" id="Animation_8j3uc"]
@@ -749,8 +773,24 @@ tracks/1/keys = {
 "values": ["taking_damage"]
 }
 
+[sub_resource type="Animation" id="Animation_vj4e5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AttackDirection/DamageBox/HitBox/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mx4a0"]
 _data = {
+"RESET": SubResource("Animation_vj4e5"),
 "attack": SubResource("Animation_4ulxx"),
 "attack2": SubResource("Animation_nwpud"),
 "death": SubResource("Animation_8j3uc"),
@@ -768,16 +808,14 @@ collision_layer = 2
 script = ExtResource("1_tlyep")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(31, -8)
+position = Vector2(6, -23)
 scale = Vector2(1.025, 1.025)
 sprite_frames = SubResource("SpriteFrames_tp1sj")
-animation = &"attack"
+animation = &"player_stay"
 autoplay = "player_stay"
-frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(26, 16)
+position = Vector2(1, 0)
 shape = SubResource("CapsuleShape2D_24unp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -805,15 +843,13 @@ libraries = {
 collision_layer = 16
 collision_mask = 0
 
-[node name="CollisionShape2D" parent="AttackDirection/DamageBox/HurtBox" index="0"]
-position = Vector2(28, 12)
-
 [node name="HitBox" parent="AttackDirection/DamageBox" index="1"]
-position = Vector2(19, 3)
-collision_layer = 0
+collision_layer = 64
 collision_mask = 32
 
 [node name="CollisionShape2D" parent="AttackDirection/DamageBox/HitBox" index="0"]
-position = Vector2(53, 10)
+position = Vector2(33, 0)
+
+[connection signal="area_entered" from="AttackDirection/DamageBox/HitBox" to="." method="_on_hit_box_area_entered"]
 
 [editable path="AttackDirection/DamageBox"]
