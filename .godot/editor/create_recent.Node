@@ -1,0 +1,6 @@
+CollisionShape2D
+TileMap
+StaticBody2D
+Sprite2D
+ParallaxLayer
+ParallaxBackground
