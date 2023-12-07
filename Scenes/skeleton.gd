@@ -1,6 +1,14 @@
 extends CharacterBody2D
 
-enum { IDLE, ATTACK, CHASE, DEATH, DAMAGE, RECOVER }
+enum { 
+	IDLE, 
+	ATTACK, 
+	CHASE, 
+	DEATH, 
+	DAMAGE, 
+	RECOVER,
+	MOVE
+}
 
 var state: int = 0:
 	set(value):
@@ -18,6 +26,8 @@ var state: int = 0:
 				death_state()
 			RECOVER:
 				recover_state()
+			MOVE:
+				move_state()
 
 @onready
 var animation = $AnimationPlayer
@@ -44,7 +54,7 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		
-	var player = $"../../Player/Player"
+	var player = $"../Player"
 	var direction = (player.position - self.position).normalized()
 	
 	move_and_slide()
@@ -75,13 +85,27 @@ func chase_state():
 		$AttackDIrection.rotation_degrees = 0
 
 
+func move_state():
+	var player = $"../Player"
+	var direction = (player.position - self.position).normalized()
+	if direction.x < 0:
+		sprite2d.flip_h = true
+		animation.play("walk")
+		velocity.x = SPEED * direction.x
+	else:
+		sprite2d.flip_h = false
+		animation.play("walk")
+		velocity.x = SPEED * direction.x
+
+
 # 2 метода для преследования
 func _on_detector_body_entered(body):
-	pass
+	state = MOVE
 
 
 func _on_detector_body_exited(body):
-	pass
+	velocity.x = 0
+	state = IDLE
 
 
 func recover_state():

@@ -3,7 +3,14 @@ extends CharacterBody2D
 
 signal hp_changed(new_hp)
 
-enum { MOVE, ATTACK, ATTACK2, SLIDE, DAMAGE, DEATH }
+enum { 
+	MOVE, 
+	ATTACK, 
+	ATTACK2, 
+	SLIDE, 
+	DAMAGE, 
+	DEATH 
+}
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -400.0
@@ -24,6 +31,9 @@ var player_position
 var damage_basic = 15
 var damage_multiplier = 1
 var damage
+var last_direction = 1
+var movementInput = 0
+var slideDirection = 1
 
 
 func _ready():
@@ -64,6 +74,7 @@ func _physics_process(delta):
 	move_and_slide()
 	player_position = self.position
 	Signals.emit_signal("player_position_update", player_position)
+	animation.flip_h = last_direction - 1
 
 
 func death_state():
@@ -75,6 +86,10 @@ func death_state():
 
 
 func move_state():
+	# set movement input  to 1, -1, or 0
+	movementInput = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+	if movementInput != 0:
+		last_direction = movementInput
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
 		if velocity.y == 0:
@@ -100,11 +115,9 @@ func move_state():
 
 
 func slide_state():
+	slideDirection = last_direction
 	animationPlayer.play("slide")
-	if self.velocity.x >= 0:
-		velocity.x += 25
-	else:
-		velocity.x -= 25
+	velocity.x = 250 * slideDirection
 	await animationPlayer.animation_finished
 	state = MOVE
 

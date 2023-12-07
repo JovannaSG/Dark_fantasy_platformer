@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://yurivt2jir22"]
+[gd_scene load_steps=18 format=3 uid="uid://yurivt2jir22"]
 
 [ext_resource type="PackedScene" uid="uid://che456ghxf3fr" path="res://Scenes/player.tscn" id="1_4w7t5"]
 [ext_resource type="Script" path="res://Scenes/node_2d.gd" id="1_e63db"]
@@ -11,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://drlj1no23x63j" path="res://HUD/bar_background.png" id="8_sc0py"]
 [ext_resource type="Texture2D" uid="uid://c4agbm3ntb2i" path="res://HUD/bar.png" id="9_th8co"]
 [ext_resource type="Texture2D" uid="uid://dnqfdk38mtml7" path="res://HUD/health_bar.png" id="10_7vkob"]
+[ext_resource type="Texture2D" uid="uid://dhsiqxtihs4rj" path="res://Characters/Joanna/Idle/Idle1.png" id="12_mk1nk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o824d"]
+size = Vector2(31, 41.75)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1oibh"]
 texture = ExtResource("1_gmeu3")
@@ -1441,6 +1445,18 @@ sources/2 = SubResource("TileSetAtlasSource_llx4a")
 visibility_layer = 2
 script = ExtResource("1_e63db")
 
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1311, 602.875)
+shape = SubResource("RectangleShape2D_o824d")
+
+[node name="Idle1" type="Sprite2D" parent="Area2D"]
+position = Vector2(1310, 603)
+texture = ExtResource("12_mk1nk")
+
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 
 [node name="TileMap" type="TileMap" parent="StaticBody2D3"]
@@ -1508,4 +1524,5 @@ texture_under = ExtResource("8_sc0py")
 texture_over = ExtResource("9_th8co")
 texture_progress = ExtResource("10_7vkob")
 
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="hp_changed" from="Player/Player" to="." method="_on_player_hp_changed"]

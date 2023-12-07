@@ -19,3 +19,7 @@ func _ready():
 
 func _on_player_hp_changed(new_hp):
 	hpBar.value = new_hp
+
+
+func _on_area_2d_body_entered(body):
+	get_tree().change_scene_to_file("res://Scenes/level2.tscn")
