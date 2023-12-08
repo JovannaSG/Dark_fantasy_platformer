@@ -517,16 +517,14 @@ script = ExtResource("1_gfn8l")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.746667, 0.746667)
 sprite_frames = SubResource("SpriteFrames_curtd")
-animation = &"takingDamage"
+animation = &"walk"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(2, 4)
 shape = SubResource("CapsuleShape2D_1cj83")
 
 [node name="Detector" type="Area2D" parent="."]
-visible = false
 collision_layer = 0
 collision_mask = 2
 
