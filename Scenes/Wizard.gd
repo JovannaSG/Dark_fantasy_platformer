@@ -19,16 +19,9 @@ var state: int = 0:
 				idle_state()
 			ATTACK:
 				attack_state()
-			CHASE:
-				chase_state()
-			DAMAGE:
-				damage_state()
 			DEATH:
 				death_state()
-			RECOVER:
-				recover_state()
-			MOVE:
-				move_state()
+
 
 @onready
 var ray_cast = $RayCast2D
@@ -38,6 +31,8 @@ var animation = $AnimationPlayer
 var sprite2d = $AnimatedSprite2D
 @export
 var fireball : PackedScene
+@onready
+var timer = $Timer
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var chase = false
@@ -49,7 +44,11 @@ var HP = 10
 var player_damage
 
 
+var is_enter = false
+
+
 func _ready():
+	#player = get_parent().find_child("Player")
 	Signals.connect("player_position_update", Callable(self, "_on_player_position_update"))
 	Signals.connect("player_attack", Callable(self, "_on_damage_taking"))
 
@@ -58,11 +57,27 @@ func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
-		
-	var player = $"../../Player"
-	var direction = (player.position - self.position).normalized()
+	
+	if is_enter:
+		var player = $"../../Player"
+		var direction = (player.position - self.position).normalized()
+		_aim(player)
+		_check_player_collision(player)
+	else:
+		timer.stop()
 	
 	move_and_slide()
+
+
+func _check_player_collision(player):
+	if ray_cast.get_collider() == player and timer.is_stopped():
+		timer.start()
+	elif ray_cast.get_collider() != player and not timer.is_stopped():
+		timer.stop()
+
+
+func _aim(player):
+	ray_cast.target_position = to_local(player.position)
 
 
 func _on_player_position_update(player_pos):
@@ -78,49 +93,6 @@ func attack_state():
 	animation.play("attack")
 	await animation.animation_finished
 	state = RECOVER
-
-
-func chase_state():
-	direction = (player - self.position).normalized()
-	if direction.x < 0:
-		sprite2d.flip_h = true
-		$AttackDIrection.rotation_degrees = 180
-	else:
-		sprite2d.flip_h = false
-		$AttackDIrection.rotation_degrees = 0
-
-
-func move_state():
-	var player = $"../../Player"
-	var direction = (player.position - self.position).normalized()
-	if direction.x < 0:
-		sprite2d.flip_h = true
-		animation.play("walk")
-		velocity.x = SPEED * direction.x
-	else:
-		sprite2d.flip_h = false
-		animation.play("walk")
-		velocity.x = SPEED * direction.x
-
-
-# 2 метода для преследования
-func _on_detector_body_entered(body, fireball):
-	#state = MOVE
-	print("work")
-	var f = fireball.instantiate()	
-	get_tree().current_scene.add_child(f)
-	f.transform = player.position
-
-
-func _on_detector_body_exited(body):
-	velocity.x = 0
-	state = IDLE
-
-
-func recover_state():
-	animation.play("recover")
-	await animation.animation_finished
-	state = IDLE
 
 
 func death_state():
@@ -158,3 +130,22 @@ func _on_hurt_box_area_entered(area):
 	else:
 		state = IDLE
 		state = DAMAGE
+
+
+func _on_detector_body_entered(body):
+	is_enter = true
+
+
+func _on_timer_timeout():
+	_shoot()
+	
+	
+func _shoot():
+	var f = fireball.instantiate()
+	f.position = position
+	f.direction = (ray_cast.target_position).normalized()
+	get_tree().current_scene.add_child(f)
+
+
+func _on_detector_body_exited(body):
+	is_enter = false
