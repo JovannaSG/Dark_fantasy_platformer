@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://qtv3ku7gaoad"]
+[gd_scene load_steps=18 format=3 uid="uid://qtv3ku7gaoad"]
 
 [ext_resource type="Texture2D" uid="uid://ceqctosllbp1w" path="res://Tiles/Castle/floor_tile_carpet_2.png" id="1_hp2ox"]
 [ext_resource type="Texture2D" uid="uid://dh17dvkd78o5n" path="res://Background/layer_1.png" id="1_kd6o2"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://che456ghxf3fr" path="res://Scenes/player.tscn" id="4_gf1ek"]
 [ext_resource type="Texture2D" uid="uid://di2d000g2frbs" path="res://Tiles/Castle/floor_tile_1.png" id="4_l70p8"]
 [ext_resource type="PackedScene" uid="uid://pp07bp0arlak" path="res://Scenes/skeleton.tscn" id="9_h2s08"]
+[ext_resource type="PackedScene" uid="uid://c7p0keui0cbvl" path="res://Scenes/wizard.tscn" id="10_v1ptt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4iup6"]
 texture = ExtResource("1_hp2ox")
@@ -138,10 +139,13 @@ position = Vector2(576, 619.5)
 scale = Vector2(3.6, 2.36667)
 texture = ExtResource("3_hh4rs")
 
-[node name="Player" parent="." instance=ExtResource("4_gf1ek")]
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("4_gf1ek")]
 position = Vector2(80, 608)
 
 [node name="enemy" type="Node2D" parent="."]
 
-[node name="Skeleton" parent="." instance=ExtResource("9_h2s08")]
+[node name="Skeleton" parent="enemy" instance=ExtResource("9_h2s08")]
 position = Vector2(928, 504)
+
+[node name="Wizard" parent="enemy" instance=ExtResource("10_v1ptt")]
+position = Vector2(592, 568)

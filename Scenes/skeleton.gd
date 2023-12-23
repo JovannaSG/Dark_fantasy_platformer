@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+
 enum { 
 	IDLE, 
 	ATTACK, 
@@ -30,17 +31,21 @@ var state: int = 0:
 				move_state()
 
 @onready
+var ray_cast = $RayCast2D
+@onready
 var animation = $AnimationPlayer
 @onready
 var sprite2d = $AnimatedSprite2D
+@export
+var fireball : PackedScene
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var chase = false
-var SPEED = 100
+var SPEED = 0
 var player
 var direction
 var damage = 10
-var HP = 30
+var HP = 10
 var player_damage
 
 
@@ -54,7 +59,7 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		
-	var player = $"../Player"
+	var player = $"../../Player"
 	var direction = (player.position - self.position).normalized()
 	
 	move_and_slide()
@@ -86,7 +91,7 @@ func chase_state():
 
 
 func move_state():
-	var player = $"../Player"
+	var player = $"../../Player"
 	var direction = (player.position - self.position).normalized()
 	if direction.x < 0:
 		sprite2d.flip_h = true
@@ -99,8 +104,12 @@ func move_state():
 
 
 # 2 метода для преследования
-func _on_detector_body_entered(body):
-	state = MOVE
+func _on_detector_body_entered(body, fireball):
+	#state = MOVE
+	print("work")
+	var f = fireball.instantiate()	
+	get_tree().current_scene.add_child(f)
+	f.transform = player.position
 
 
 func _on_detector_body_exited(body):

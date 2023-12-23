@@ -1,0 +1,115 @@
+[gd_scene load_steps=10 format=3 uid="uid://dkqfucsmok04q"]
+
+[ext_resource type="Texture2D" uid="uid://c4su3h8unda2" path="res://Characters/wizard/wizard-fireball.png" id="1_4oj24"]
+
+[sub_resource type="GDScript" id="GDScript_67dod"]
+script/source = "extends Area2D
+
+var direction : Vector2 = Vector2.RIGHT
+var SPEED : float = 200
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	position += direction * SPEED * delta
+
+
+func _on_visible_on_screen_enabler_2d_screen_exited():
+	queue_free()
+
+
+func _on_body_entered(body):
+	if body.is_in_group(\"Player\"):
+		print(\"kill\")
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7hnf"]
+atlas = ExtResource("1_4oj24")
+region = Rect2(0, 0, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e06n1"]
+atlas = ExtResource("1_4oj24")
+region = Rect2(26, 0, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vew4g"]
+atlas = ExtResource("1_4oj24")
+region = Rect2(52, 0, 26, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ypyqf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7hnf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e06n1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vew4g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hysm1"]
+
+[sub_resource type="Animation" id="Animation_3bbn1"]
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["default"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0cny8"]
+_data = {
+"default": SubResource("Animation_3bbn1")
+}
+
+[node name="Fireball" type="Area2D"]
+light_mask = 2
+visibility_layer = 2
+script = SubResource("GDScript_67dod")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+sprite_frames = SubResource("SpriteFrames_ypyqf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+shape = SubResource("CircleShape2D_hysm1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0cny8")
+}
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

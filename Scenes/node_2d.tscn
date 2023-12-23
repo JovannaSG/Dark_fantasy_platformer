@@ -1508,7 +1508,7 @@ position = Vector2(624, 440)
 
 [node name="Player" type="Node2D" parent="."]
 
-[node name="Player" parent="Player" instance=ExtResource("1_4w7t5")]
+[node name="Player" parent="Player" groups=["Player"] instance=ExtResource("1_4w7t5")]
 position = Vector2(432, 432)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
