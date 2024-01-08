@@ -7,3 +7,7 @@ res://Scenes/wizard.tscn
 res://Scenes/fireball.tscn
 res://Scenes/skeleton.tscn
 res://Scenes/player.tscn
+res://Scenes/Wizard.gd
+res://Scenes/player.gd
+res://Scenes/level2.gd
+res://Scenes/node_2d.gd

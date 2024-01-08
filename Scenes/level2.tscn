@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://qtv3ku7gaoad"]
+[gd_scene load_steps=22 format=3 uid="uid://qtv3ku7gaoad"]
 
 [ext_resource type="Texture2D" uid="uid://ceqctosllbp1w" path="res://Tiles/Castle/floor_tile_carpet_2.png" id="1_hp2ox"]
 [ext_resource type="Texture2D" uid="uid://dh17dvkd78o5n" path="res://Background/layer_1.png" id="1_kd6o2"]
+[ext_resource type="Script" path="res://Scenes/level2.gd" id="1_nltb3"]
 [ext_resource type="Texture2D" uid="uid://cidla4y1rux18" path="res://Background/layer_2.png" id="2_afs4t"]
 [ext_resource type="Texture2D" uid="uid://tqbsarawjpkq" path="res://Tiles/Castle/floor_tile_3.png" id="2_edkym"]
 [ext_resource type="Texture2D" uid="uid://xihj1gost7uw" path="res://Tiles/Castle/floor_tile_4.png" id="3_8ywg4"]
@@ -10,6 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://di2d000g2frbs" path="res://Tiles/Castle/floor_tile_1.png" id="4_l70p8"]
 [ext_resource type="PackedScene" uid="uid://pp07bp0arlak" path="res://Scenes/skeleton.tscn" id="9_h2s08"]
 [ext_resource type="PackedScene" uid="uid://c7p0keui0cbvl" path="res://Scenes/wizard.tscn" id="10_v1ptt"]
+[ext_resource type="Texture2D" uid="uid://drlj1no23x63j" path="res://HUD/bar_background.png" id="11_cmahd"]
+[ext_resource type="Texture2D" uid="uid://c4agbm3ntb2i" path="res://HUD/bar.png" id="12_fyy8r"]
+[ext_resource type="Texture2D" uid="uid://dnqfdk38mtml7" path="res://HUD/health_bar.png" id="13_0t3c6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4iup6"]
 texture = ExtResource("1_hp2ox")
@@ -96,6 +100,7 @@ func _process(delta):
 "
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_nltb3")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -139,9 +144,6 @@ position = Vector2(576, 619.5)
 scale = Vector2(3.6, 2.36667)
 texture = ExtResource("3_hh4rs")
 
-[node name="Player" parent="." groups=["Player"] instance=ExtResource("4_gf1ek")]
-position = Vector2(80, 608)
-
 [node name="enemy" type="Node2D" parent="."]
 
 [node name="Skeleton" parent="enemy" instance=ExtResource("9_h2s08")]
@@ -149,3 +151,23 @@ position = Vector2(928, 504)
 
 [node name="Wizard" parent="enemy" instance=ExtResource("10_v1ptt")]
 position = Vector2(592, 568)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="hpBar" type="TextureProgressBar" parent="CanvasLayer"]
+offset_left = 8.0
+offset_top = 16.0
+offset_right = 392.0
+offset_bottom = 48.0
+value = 100.0
+nine_patch_stretch = true
+texture_under = ExtResource("11_cmahd")
+texture_over = ExtResource("12_fyy8r")
+texture_progress = ExtResource("13_0t3c6")
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="Player" parent="Player" groups=["Player"] instance=ExtResource("4_gf1ek")]
+position = Vector2(80, 608)
+
+[connection signal="hp_changed" from="Player/Player" to="." method="_on_player_hp_changed"]

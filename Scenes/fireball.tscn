@@ -1,12 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://dkqfucsmok04q"]
+[gd_scene load_steps=11 format=3 uid="uid://dkqfucsmok04q"]
 
 [ext_resource type="Texture2D" uid="uid://c4su3h8unda2" path="res://Characters/wizard/wizard-fireball.png" id="1_4oj24"]
 
 [sub_resource type="GDScript" id="GDScript_67dod"]
 script/source = "extends Area2D
 
+var damage = 100
 var direction : Vector2 = Vector2.RIGHT
 var SPEED : float = 200
+
+
+func _ready():
+	Signals.connect(\"player_position_update\", Callable(self, \"_on_player_position_update\"))
+	Signals.connect(\"player_attack\", Callable(self, \"_on_damage_taking\"))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,9 +24,8 @@ func _on_visible_on_screen_enabler_2d_screen_exited():
 	queue_free()
 
 
-func _on_body_entered(body):
-	if body.is_in_group(\"Player\"):
-		print(\"kill\")
+func _on_area_2d_area_entered(area):
+	Signals.emit_signal(\"enemy_attack\", damage)
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t7hnf"]
@@ -51,8 +56,6 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_hysm1"]
 
 [sub_resource type="Animation" id="Animation_3bbn1"]
 length = 0.6
@@ -87,20 +90,20 @@ _data = {
 "default": SubResource("Animation_3bbn1")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_qwsfk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hysm1"]
+
 [node name="Fireball" type="Area2D"]
-light_mask = 2
 visibility_layer = 2
+collision_layer = 32
+collision_mask = 64
 script = SubResource("GDScript_67dod")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 light_mask = 2
 visibility_layer = 2
 sprite_frames = SubResource("SpriteFrames_ypyqf")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-light_mask = 2
-visibility_layer = 2
-shape = SubResource("CircleShape2D_hysm1")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -111,5 +114,19 @@ libraries = {
 light_mask = 2
 visibility_layer = 2
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+light_mask = 2
+visibility_layer = 2
+shape = SubResource("CircleShape2D_qwsfk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+shape = SubResource("CircleShape2D_hysm1")
+
 [connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
