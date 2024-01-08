@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1704685719
+::res://::1704697926
 icon.svg::CompressedTexture2D::2588759297427504818::1702027506::1702027506::1::::<><>::
 README.md::TextFile::-1::1702027505::0::1::::<><>::
 ::res://addons/::1702027506
@@ -446,25 +446,26 @@ bar.png::CompressedTexture2D::200255429258543882::1702027505::1702027505::1::::<
 bar_background.png::CompressedTexture2D::8375774137492865045::1702027505::1702027505::1::::<><>::
 health_bar.png::CompressedTexture2D::8105056574788418750::1702027505::1702027505::1::::<><>::
 weapon_icon.png::CompressedTexture2D::8649814123624881754::1702027505::1702027505::1::::<><>::
-::res://Scenes/::1703308173
+::res://Scenes/::1704697908
 background.tscn::PackedScene::8718074401512786483::1702027505::0::1::::<><>::res://Scenes/ParallaxBackground.gd<>uid://dwgt37wclc7ia::::res://Background/oak_wood/background_layer_1.png<>uid://bf1386hi8jbl0::::res://Background/oak_wood/background_layer_2.png<>uid://k7jdnm701q0f::::res://Background/oak_wood/background_layer_3.png
 Background_test_bg.gd::GDScript::-1::1702027505::0::1::::<>ParallaxBackground<>::
 bar.png::CompressedTexture2D::2040205038452077549::1702027505::1702027505::1::::<><>::
 damage_box.tscn::PackedScene::6557869232635001554::1702027505::0::1::::<><>::
-fireball.tscn::PackedScene::7894519965784050174::1703308173::0::1::::<><>::uid://c4su3h8unda2::::res://Characters/wizard/wizard-fireball.png
-level2.tscn::PackedScene::1163570292204644251::1703308173::0::1::::<><>::uid://ceqctosllbp1w::::res://Tiles/Castle/floor_tile_carpet_2.png<>uid://dh17dvkd78o5n::::res://Background/layer_1.png<>uid://cidla4y1rux18::::res://Background/layer_2.png<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://xihj1gost7uw::::res://Tiles/Castle/floor_tile_4.png<>uid://df5wb1egjiivj::::res://Background/layer_3.png<>uid://che456ghxf3fr::::res://Scenes/player.tscn<>uid://di2d000g2frbs::::res://Tiles/Castle/floor_tile_1.png<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://c7p0keui0cbvl::::res://Scenes/wizard.tscn
-menu.tscn::PackedScene::3358423264396014852::1703308172::0::1::::<><>::uid://dwhdn85erdvqx::::res://Scenes/background.tscn<>uid://ue0w1sfwot62::::res://Scenes/test_bg.tscn
-node_2d.gd::GDScript::-1::1702027505::0::1::::<>Node2D<>::
-node_2d.tscn::PackedScene::1726867411202997221::1703308173::0::1::::<><>::uid://che456ghxf3fr::::res://Scenes/player.tscn<>res://Scenes/node_2d.gd<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://bccpk4kg1cwq0::::res://Tiles/oak_wood/oak_woods_tileset.png<>uid://dwgt37wclc7ia::::res://Background/oak_wood/background_layer_1.png<>uid://bf1386hi8jbl0::::res://Background/oak_wood/background_layer_2.png<>uid://k7jdnm701q0f::::res://Background/oak_wood/background_layer_3.png<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://drlj1no23x63j::::res://HUD/bar_background.png<>uid://c4agbm3ntb2i::::res://HUD/bar.png<>uid://dnqfdk38mtml7::::res://HUD/health_bar.png<>uid://dhsiqxtihs4rj::::res://Characters/Joanna/Idle/Idle1.png
+fireball.tscn::PackedScene::7894519965784050174::1704695243::0::1::::<><>::uid://c4su3h8unda2::::res://Characters/wizard/wizard-fireball.png
+level2.gd::GDScript::-1::1704690287::0::1::::<>Node2D<>::
+level2.tscn::PackedScene::1163570292204644251::1704695243::0::1::::<><>::uid://ceqctosllbp1w::::res://Tiles/Castle/floor_tile_carpet_2.png<>uid://dh17dvkd78o5n::::res://Background/layer_1.png<>res://Scenes/level2.gd<>uid://cidla4y1rux18::::res://Background/layer_2.png<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://xihj1gost7uw::::res://Tiles/Castle/floor_tile_4.png<>uid://df5wb1egjiivj::::res://Background/layer_3.png<>uid://che456ghxf3fr::::res://Scenes/player.tscn<>uid://di2d000g2frbs::::res://Tiles/Castle/floor_tile_1.png<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://c7p0keui0cbvl::::res://Scenes/wizard.tscn<>uid://drlj1no23x63j::::res://HUD/bar_background.png<>uid://c4agbm3ntb2i::::res://HUD/bar.png<>uid://dnqfdk38mtml7::::res://HUD/health_bar.png
+menu.tscn::PackedScene::3358423264396014852::1704695242::0::1::::<><>::uid://dwhdn85erdvqx::::res://Scenes/background.tscn<>uid://ue0w1sfwot62::::res://Scenes/test_bg.tscn
+node_2d.gd::GDScript::-1::1704691515::0::1::::<>Node2D<>::
+node_2d.tscn::PackedScene::1726867411202997221::1704695243::0::1::::<><>::uid://che456ghxf3fr::::res://Scenes/player.tscn<>res://Scenes/node_2d.gd<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://bccpk4kg1cwq0::::res://Tiles/oak_wood/oak_woods_tileset.png<>uid://dwgt37wclc7ia::::res://Background/oak_wood/background_layer_1.png<>uid://bf1386hi8jbl0::::res://Background/oak_wood/background_layer_2.png<>uid://k7jdnm701q0f::::res://Background/oak_wood/background_layer_3.png<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://drlj1no23x63j::::res://HUD/bar_background.png<>uid://c4agbm3ntb2i::::res://HUD/bar.png<>uid://dnqfdk38mtml7::::res://HUD/health_bar.png<>uid://dhsiqxtihs4rj::::res://Characters/Joanna/Idle/Idle1.png
 ParallaxBackground.gd::GDScript::-1::1702027505::0::1::::<>ParallaxBackground<>::
-player.gd::GDScript::-1::1702027505::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::5274236788317735971::1703308173::0::1::::<><>::res://Scenes/player.gd<>uid://cg8q4igwh1bi1::::res://Characters/knight/attack/_Attack2.png<>uid://qc35s6aoqf4u::::res://Characters/knight/attack/_Attack.png<>uid://c1nybmnl3d2xl::::res://Characters/knight/death/_Death.png<>uid://dlqx1hmetwcth::::res://Characters/knight/jump/_JumpFallInbetween.png<>uid://ijgbx6u87mss::::res://Characters/knight/jump/_Jump.png<>uid://cujoljd8lioml::::res://Characters/knight/idle/_Idle.png<>uid://cxl3opl4k5c6d::::res://Characters/knight/run/_Run.png<>uid://dbsqxwuyqhn4e::::res://Characters/knight/roll/_Roll.png<>uid://dtpdoxsopjdmv::::res://Characters/knight/slide/_SlideFull.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
+player.gd::GDScript::-1::1704691784::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::5274236788317735971::1704695243::0::1::::<><>::res://Scenes/player.gd<>uid://cg8q4igwh1bi1::::res://Characters/knight/attack/_Attack2.png<>uid://qc35s6aoqf4u::::res://Characters/knight/attack/_Attack.png<>uid://c1nybmnl3d2xl::::res://Characters/knight/death/_Death.png<>uid://dlqx1hmetwcth::::res://Characters/knight/jump/_JumpFallInbetween.png<>uid://ijgbx6u87mss::::res://Characters/knight/jump/_Jump.png<>uid://cujoljd8lioml::::res://Characters/knight/idle/_Idle.png<>uid://cxl3opl4k5c6d::::res://Characters/knight/run/_Run.png<>uid://dbsqxwuyqhn4e::::res://Characters/knight/roll/_Roll.png<>uid://dtpdoxsopjdmv::::res://Characters/knight/slide/_SlideFull.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
 signals.gd::GDScript::-1::1702027505::0::1::::<>Node<>::
-skeleton.gd::GDScript::-1::1703308172::0::1::::<>CharacterBody2D<>::
-skeleton.tscn::PackedScene::1085373467937483550::1703308173::0::1::::<><>::uid://px1m0orlsgdb::::res://Characters/skeleton/Idle.png<>uid://bl6rtikco8wu7::::res://Characters/skeleton/Death.png<>uid://bneqarmw3xrhg::::res://Characters/skeleton/Walk.png<>uid://blkd81u5cm2d1::::res://Characters/skeleton/Attack.png<>uid://bucvfmi7bvqpa::::res://Characters/skeleton/Take Hit.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
-test_bg.tscn::PackedScene::1413592989732689141::1703308173::0::1::::<><>::res://Scenes/Background_test_bg.gd<>uid://dh17dvkd78o5n::::res://Background/layer_1.png<>uid://cidla4y1rux18::::res://Background/layer_2.png<>uid://df5wb1egjiivj::::res://Background/layer_3.png
-Wizard.gd::GDScript::-1::1702091082::0::1::::<>CharacterBody2D<>::
-wizard.tscn::PackedScene::7051386054258806777::1703308173::0::1::::<><>::res://Scenes/Wizard.gd<>uid://dkqfucsmok04q::::res://Scenes/fireball.tscn<>uid://dvxp0jcsgsekn::::res://Characters/Enemy-death.png<>uid://c4su3h8unda2::::res://Characters/wizard/wizard-fireball.png<>uid://bgv1ftx5lkdmo::::res://Characters/wizard/wizard.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
+skeleton.gd::GDScript::-1::1704685804::0::1::::<>CharacterBody2D<>::
+skeleton.tscn::PackedScene::1085373467937483550::1704697908::0::1::::<><>::uid://px1m0orlsgdb::::res://Characters/skeleton/Idle.png<>uid://bl6rtikco8wu7::::res://Characters/skeleton/Death.png<>uid://bneqarmw3xrhg::::res://Characters/skeleton/Walk.png<>uid://blkd81u5cm2d1::::res://Characters/skeleton/Attack.png<>uid://bucvfmi7bvqpa::::res://Characters/skeleton/Take Hit.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
+test_bg.tscn::PackedScene::1413592989732689141::1704695243::0::1::::<><>::res://Scenes/Background_test_bg.gd<>uid://dh17dvkd78o5n::::res://Background/layer_1.png<>uid://cidla4y1rux18::::res://Background/layer_2.png<>uid://df5wb1egjiivj::::res://Background/layer_3.png
+Wizard.gd::GDScript::-1::1704695190::0::1::::<>CharacterBody2D<>::
+wizard.tscn::PackedScene::7051386054258806777::1704695243::0::1::::<><>::res://Scenes/Wizard.gd<>uid://dkqfucsmok04q::::res://Scenes/fireball.tscn<>uid://dvxp0jcsgsekn::::res://Characters/Enemy-death.png<>uid://c4su3h8unda2::::res://Characters/wizard/wizard-fireball.png<>uid://bgv1ftx5lkdmo::::res://Characters/wizard/wizard.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
 ::res://Tiles/::1702027506
 ::res://Tiles/Castle/::1702027506
 arch_1.png::CompressedTexture2D::4081251842280657255::1702027505::1702027505::1::::<><>::
