@@ -19,6 +19,8 @@ const JUMP_VELOCITY = -400.0
 var animation = $AnimatedSprite2D
 @onready
 var animationPlayer = $AnimationPlayer
+@onready
+var collisionShape = $CollisionShape2D
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")

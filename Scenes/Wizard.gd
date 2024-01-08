@@ -58,8 +58,17 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	
+	if state == DEATH:
+		timer.stop()
+		death_state()
+	
+	var player = $"../../Player/Player"
+	if player.position.x - self.position.x > 0:
+		sprite2d.flip_h = true
+	elif player.position.x - self.position.x < 0:
+		sprite2d.flip_h = false
+	
 	if is_enter:
-		var player = $"../../Player"
 		var direction = (player.position - self.position).normalized()
 		_aim(player)
 		_check_player_collision(player)
@@ -141,10 +150,13 @@ func _on_timer_timeout():
 	
 	
 func _shoot():
+	animation.play("attack")
+	await animation.animation_finished
 	var f = fireball.instantiate()
 	f.position = position
 	f.direction = (ray_cast.target_position).normalized()
 	get_tree().current_scene.add_child(f)
+	animation.play("idle")
 
 
 func _on_detector_body_exited(body):
