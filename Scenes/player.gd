@@ -87,6 +87,7 @@ func death_state():
 	await animationPlayer.animation_finished
 	queue_free()
 	get_tree().quit()
+  
 
 func move_state():
 	# set movement input  to 1, -1, or 0
