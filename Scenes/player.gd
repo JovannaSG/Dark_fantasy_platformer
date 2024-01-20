@@ -21,6 +21,8 @@ var animation = $AnimatedSprite2D
 var animationPlayer = $AnimationPlayer
 @onready
 var collisionShape = $CollisionShape2D
+@onready
+var menu : PackedScene
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -84,8 +86,7 @@ func death_state():
 	animationPlayer.play("death")
 	await animationPlayer.animation_finished
 	queue_free()
-	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
-
+	get_tree().quit()
 
 func move_state():
 	# set movement input  to 1, -1, or 0
@@ -113,7 +114,7 @@ func move_state():
 		state = SLIDE
 	
 	if Input.is_action_just_pressed("attack"):
-		state = ATTACK
+		state = ATTACK	
 
 
 func slide_state():
