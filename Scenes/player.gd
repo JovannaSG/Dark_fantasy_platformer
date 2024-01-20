@@ -84,7 +84,7 @@ func death_state():
 	animationPlayer.play("death")
 	await animationPlayer.animation_finished
 	queue_free()
-	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
+	get_tree().quit()
 
 
 func move_state():
