@@ -60,6 +60,7 @@ func _physics_process(delta):
 	
 	if state == DEATH:
 		timer.stop()
+
 		death_state()
 	
 	var player = $"../../Player/Player"
@@ -152,6 +153,11 @@ func _on_timer_timeout():
 func _shoot():
 	animation.play("attack")
 	await animation.animation_finished
+	if state != DEATH:
+		var f = fireball.instantiate()
+		f.position = position
+		f.direction = (ray_cast.target_position).normalized()
+		get_tree().current_scene.add_child(f)
 	var f = fireball.instantiate()
 	f.position = position
 	f.direction = (ray_cast.target_position).normalized()
