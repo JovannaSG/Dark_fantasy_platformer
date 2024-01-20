@@ -59,6 +59,8 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 	
 	if state == DEATH:
+		timer.stop()
+
 		death_state()
 	
 	var player = $"../../Player/Player"
@@ -156,6 +158,10 @@ func _shoot():
 		f.position = position
 		f.direction = (ray_cast.target_position).normalized()
 		get_tree().current_scene.add_child(f)
+	var f = fireball.instantiate()
+	f.position = position
+	f.direction = (ray_cast.target_position).normalized()
+	get_tree().current_scene.add_child(f)
 	animation.play("idle")
 
 
