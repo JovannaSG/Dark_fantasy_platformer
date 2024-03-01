@@ -8,3 +8,8 @@ res://Scenes/fireball.tscn
 res://Scenes/skeleton.tscn
 res://Scenes/player.tscn
 res://Scenes/player.gd
+res://Scenes/Background_test_bg.gd
+res://Scenes/level2.gd
+res://Scenes/node_2d.gd
+res://Scenes/ParallaxBackground.gd
+res://Scenes/Wizard.gd
