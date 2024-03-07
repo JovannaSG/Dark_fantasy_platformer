@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://duk4rn3223a0"]
+
+[ext_resource type="PackedScene" uid="uid://ue0w1sfwot62" path="res://Scenes/test_bg.tscn" id="1_y851b"]
+
+[node name="finish_scene" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource("1_y851b")]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 333.0
+offset_top = 116.0
+offset_right = 836.0
+offset_bottom = 499.0
+theme_override_colors/font_readonly_color = Color(0.854902, 0.764706, 0.847059, 1)
+theme_override_font_sizes/font_size = 20
+text = "
+ Благодарим за то, что поиграли в бета версию
+                                  нашей игры
+
+
+                  Над игрой работала команда 
+                        Декомпиляция ибмфрь"
+editable = false
+context_menu_enabled = false

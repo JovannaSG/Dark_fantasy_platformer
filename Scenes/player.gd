@@ -22,6 +22,7 @@ var animationPlayer = $AnimationPlayer
 @onready
 var collisionShape = $CollisionShape2D
 
+
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var max_HP = 100
@@ -36,6 +37,7 @@ var damage
 var last_direction = 1
 var movementInput = 0
 var slideDirection = 1
+var potions = 0
 
 
 func _ready():
@@ -73,6 +75,13 @@ func _physics_process(delta):
 	if velocity.y > 0:
 		animationPlayer.play("fall")
 	
+	# ниже тестовыый код
+	if Input.is_action_just_pressed("heal"):
+		if potions > 0:
+			potions -= 1
+			HP += 100
+			emit_signal("hp_changed", HP)
+	
 	move_and_slide()
 	player_position = self.position
 	Signals.emit_signal("player_position_update", player_position)
@@ -83,8 +92,7 @@ func death_state():
 	velocity.x = 0
 	animationPlayer.play("death")
 	await animationPlayer.animation_finished
-	queue_free()
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
 
 
 func move_state():

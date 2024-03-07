@@ -18,7 +18,15 @@ func _ready():
 
 
 func _on_player_hp_changed(new_hp):
-	hpBar.value = new_hp
+	hpBar.value = new_hp	
+
+
+func _on_fall_death_body_entered(body):
+	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
+
+
+func _on_area_2d_1_body_entered(body):
+	get_tree().change_scene_to_file("res://Scenes/node_2d.tscn")
 
 
 func _on_area_2d_body_entered(body):

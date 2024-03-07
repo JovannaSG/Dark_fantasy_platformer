@@ -1,5 +1,6 @@
 res://Scenes/menu.tscn
 res://Scenes/skeleton.gd
+res://Scenes/first_level.tscn
 res://Scenes/node_2d.tscn
 res://Scenes/level2.tscn
 res://Scenes/test_bg.tscn
@@ -7,9 +8,7 @@ res://Scenes/wizard.tscn
 res://Scenes/fireball.tscn
 res://Scenes/skeleton.tscn
 res://Scenes/player.tscn
+res://Scenes/heal_potion.tscn
 res://Scenes/player.gd
-res://Scenes/Background_test_bg.gd
+res://Scenes/finish_scene.tscn
 res://Scenes/level2.gd
-res://Scenes/node_2d.gd
-res://Scenes/ParallaxBackground.gd
-res://Scenes/Wizard.gd
