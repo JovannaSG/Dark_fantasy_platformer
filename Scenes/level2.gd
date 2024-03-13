@@ -19,3 +19,8 @@ func _ready():
 
 func _on_player_hp_changed(new_hp):
 	hpBar.value = new_hp
+
+
+func _on_finish_body_entered(body):
+	if body.name == "Player":
+		get_tree().change_scene_to_file("res://Scenes/finish_scene.tscn")
