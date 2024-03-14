@@ -823,6 +823,7 @@ position = Vector2(25, 7)
 zoom = Vector2(2.4, 2.4)
 process_callback = 0
 limit_left = 0
+limit_top = 224
 limit_right = 2304
 limit_bottom = 672
 position_smoothing_speed = 2.0

@@ -104,12 +104,12 @@ func move_state():
 
 
 # 2 метода для преследования
-func _on_detector_body_entered(body, fireball):
-	#state = MOVE
-	print("work")
-	var f = fireball.instantiate()	
-	get_tree().current_scene.add_child(f)
-	f.transform = player.position
+func _on_detector_body_entered(body):
+	print("in")
+	state = MOVE
+	#var f = fireball.instantiate()	
+	#get_tree().current_scene.add_child(f)
+	#f.transform = player.position
 
 
 func _on_detector_body_exited(body):
