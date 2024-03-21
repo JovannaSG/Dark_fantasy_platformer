@@ -2,3 +2,9 @@ res://Scenes/first_level.tscn
 res://Scenes/skeleton.gd
 res://Scenes/node_2d.tscn
 res://Scenes/level2.tscn
+res://Scenes/test_bg.tscn
+res://Scenes/wizard.tscn
+res://Scenes/fireball.tscn
+res://Scenes/skeleton.tscn
+res://Scenes/player.tscn
+res://Scenes/heal_potion.tscn

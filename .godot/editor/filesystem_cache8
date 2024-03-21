@@ -1,28 +1,28 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710320162
+::res://::1710999552
 export_presets.cfg::TextFile::-1::1710302601::0::1::::<><>::
 icon.svg::CompressedTexture2D::2588759297427504818::1710302602::1710302602::1::::<><>::
 README.md::TextFile::-1::1710302601::0::1::::<><>::
-::res://addons/::1710302715
-::res://addons/AS2P/::1710302715
+::res://addons/::1710341839
+::res://addons/AS2P/::1710341839
 InspectorConvertor.gd::GDScript::-1::1710302715::0::1::::<>EditorInspectorPlugin<>::
 NodeSelectorProperty.gd::GDScript::-1::1710302715::0::1::::<>EditorProperty<>::
 plugin.cfg::TextFile::-1::1710302715::0::1::::<><>::
 plugin.gd::GDScript::-1::1710302715::0::1::::<>EditorPlugin<>::
-::res://Background/::1710302671
+::res://Background/::1710341838
 layer_1.png::CompressedTexture2D::7706207197920106025::1710302671::1710302671::1::::<><>::
 layer_2.png::CompressedTexture2D::5341214698130384097::1710302671::1710302671::1::::<><>::
 layer_3.png::CompressedTexture2D::7573476533597310851::1710302671::1710302671::1::::<><>::
 photo_2023-10-03_16-13-54.jpg::CompressedTexture2D::1247204879157891829::1710302671::1710302671::1::::<><>::
-::res://Background/oak_wood/::1710302671
+::res://Background/oak_wood/::1710341838
 background_layer_1.png::CompressedTexture2D::8717008217570862352::1710302671::1710302671::1::::<><>::
 background_layer_2.png::CompressedTexture2D::2792799369930562859::1710302671::1710302671::1::::<><>::
 background_layer_3.png::CompressedTexture2D::768501037656437623::1710302671::1710302671::1::::<><>::
-::res://Characters/::1710302680
+::res://Characters/::1710341839
 enemy-death-emission.png::CompressedTexture2D::6807593656364683240::1710302671::1710302672::1::::<><>::
 Enemy-death.png::CompressedTexture2D::8681664332186805665::1710302671::1710302671::1::::<><>::
-::res://Characters/Eleonore/::1710302672
-::res://Characters/Eleonore/Idle/::1710302673
+::res://Characters/Eleonore/::1710341838
+::res://Characters/Eleonore/Idle/::1710341838
 Idle1.png::CompressedTexture2D::8203259690031201671::1710302672::1710302672::1::::<><>::
 Idle2.png::CompressedTexture2D::5752142182192383214::1710302672::1710302672::1::::<><>::
 Idle3.png::CompressedTexture2D::8568061218846937915::1710302672::1710302672::1::::<><>::
@@ -32,7 +32,7 @@ Idle6.png::CompressedTexture2D::5300041692665671268::1710302672::1710302672::1::
 Idle7.png::CompressedTexture2D::8619294954621942506::1710302672::1710302672::1::::<><>::
 Idle8.png::CompressedTexture2D::4404862343961091700::1710302672::1710302672::1::::<><>::
 Idle9.png::CompressedTexture2D::3812554121639827648::1710302673::1710302673::1::::<><>::
-::res://Characters/Eleonore/Idle/Shadow/::1710302674
+::res://Characters/Eleonore/Idle/Shadow/::1710341839
 Shadow1.png::CompressedTexture2D::5892314824118731529::1710302673::1710302673::1::::<><>::
 Shadow2.png::CompressedTexture2D::1552039308223410013::1710302673::1710302673::1::::<><>::
 Shadow3.png::CompressedTexture2D::6702957522134501872::1710302673::1710302673::1::::<><>::
@@ -42,65 +42,65 @@ Shadow6.png::CompressedTexture2D::7464501780742113537::1710302673::1710302673::1
 Shadow7.png::CompressedTexture2D::7866581233093342877::1710302673::1710302673::1::::<><>::
 Shadow8.png::CompressedTexture2D::512025962475917271::1710302673::1710302674::1::::<><>::
 Shadow9.png::CompressedTexture2D::454950836035918096::1710302674::1710302674::1::::<><>::
-::res://Characters/guy/::1710302674
+::res://Characters/guy/::1710341839
 char_blue.png::CompressedTexture2D::8493065833344226803::1710302674::1710302675::1::::<><>::
-::res://Characters/Joanna/::1710302674
-::res://Characters/Joanna/Idle/::1710302674
+::res://Characters/Joanna/::1710341839
+::res://Characters/Joanna/Idle/::1710341839
 Idle1.png::CompressedTexture2D::7688258302525132415::1710302674::1710302674::1::::<><>::
 Idle2.png::CompressedTexture2D::390649528748614336::1710302674::1710302674::1::::<><>::
 Idle3.png::CompressedTexture2D::7753341309060814167::1710302674::1710302674::1::::<><>::
 Idle4.png::CompressedTexture2D::6294746574892884611::1710302674::1710302674::1::::<><>::
 Idle5.png::CompressedTexture2D::2090031971548384811::1710302674::1710302674::1::::<><>::
 Idle6.png::CompressedTexture2D::322691452390598115::1710302674::1710302674::1::::<><>::
-::res://Characters/knight/::1710302679
-::res://Characters/knight/attack/::1710302677
+::res://Characters/knight/::1710341839
+::res://Characters/knight/attack/::1710341839
 _Attack2.png::CompressedTexture2D::5263122585471459118::1710302677::1710302677::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::7377847577916292794::1710302677::1710302677::1::::<><>::
 _Attack.png::CompressedTexture2D::1128904896659829410::1710302677::1710302677::1::::<><>::
 _AttackCombo2hit.png::CompressedTexture2D::4556563921645459372::1710302677::1710302677::1::::<><>::
 _AttackComboNoMovement.png::CompressedTexture2D::3895900961607214154::1710302677::1710302677::1::::<><>::
 _AttackNoMovement.png::CompressedTexture2D::1504364679264880969::1710302677::1710302677::1::::<><>::
-::res://Characters/knight/crouch/::1710302678
+::res://Characters/knight/crouch/::1710341839
 _Crouch.png::CompressedTexture2D::5696322678929959044::1710302677::1710302677::1::::<><>::
 _CrouchAttack.png::CompressedTexture2D::8575828823703099193::1710302677::1710302678::1::::<><>::
 _CrouchFull.png::CompressedTexture2D::5032122662186588609::1710302678::1710302678::1::::<><>::
 _CrouchTransition.png::CompressedTexture2D::5152414155186880831::1710302678::1710302678::1::::<><>::
 _CrouchWalk.png::CompressedTexture2D::5494079707668465179::1710302678::1710302678::1::::<><>::
-::res://Characters/knight/dash/::1710302678
+::res://Characters/knight/dash/::1710341839
 _Dash.png::CompressedTexture2D::3577897602953824216::1710302678::1710302678::1::::<><>::
-::res://Characters/knight/death/::1710302678
+::res://Characters/knight/death/::1710341839
 _Death.png::CompressedTexture2D::6626047857298137341::1710302678::1710302678::1::::<><>::
 _DeathNoMovement.png::CompressedTexture2D::2058554517475981935::1710302678::1710302678::1::::<><>::
-::res://Characters/knight/idle/::1710302678
+::res://Characters/knight/idle/::1710341839
 _Idle.png::CompressedTexture2D::6196067800424036395::1710302678::1710302678::1::::<><>::
-::res://Characters/knight/jump/::1710302678
+::res://Characters/knight/jump/::1710341839
 _Jump.png::CompressedTexture2D::580457493521370742::1710302678::1710302678::1::::<><>::
 _JumpFallInbetween.png::CompressedTexture2D::7965812683046875509::1710302678::1710302678::1::::<><>::
-::res://Characters/knight/roll/::1710302679
+::res://Characters/knight/roll/::1710341839
 _Roll.png::CompressedTexture2D::7267623426956401738::1710302679::1710302679::1::::<><>::
-::res://Characters/knight/run/::1710302679
+::res://Characters/knight/run/::1710341839
 _Run.png::CompressedTexture2D::6411618809443007897::1710302679::1710302679::1::::<><>::
-::res://Characters/knight/slide/::1710302679
+::res://Characters/knight/slide/::1710341839
 _Slide.png::CompressedTexture2D::5331636953617942767::1710302679::1710302679::1::::<><>::
 _SlideFull.png::CompressedTexture2D::8524024135105814449::1710302679::1710302679::1::::<><>::
 _SlideTransitionEnd.png::CompressedTexture2D::8400876245377670217::1710302679::1710302679::1::::<><>::
 _SlideTransitionStart.png::CompressedTexture2D::1632385477451602941::1710302679::1710302679::1::::<><>::
-::res://Characters/knight/turn arround/::1710302679
+::res://Characters/knight/turn arround/::1710341839
 _TurnAround.png::CompressedTexture2D::8757176409158166303::1710302679::1710302679::1::::<><>::
-::res://Characters/knight/wall climb/::1710302680
+::res://Characters/knight/wall climb/::1710341839
 _WallClimb.png::CompressedTexture2D::3531949349069758454::1710302679::1710302679::1::::<><>::
 _WallClimbNoMovement.png::CompressedTexture2D::6197625070995169299::1710302679::1710302680::1::::<><>::
 _WallHang.png::CompressedTexture2D::8013149545591016693::1710302680::1710302680::1::::<><>::
 _WallSlide.png::CompressedTexture2D::1561834162296425490::1710302680::1710302680::1::::<><>::
-::res://Characters/knight 2/::1710302675
-::res://Characters/knight 2/idle/::1710302675
+::res://Characters/knight 2/::1710341839
+::res://Characters/knight 2/idle/::1710341839
 idle_knight_1.png::CompressedTexture2D::955546823819518683::1710302675::1710302675::1::::<><>::
 idle_knight_2.png::CompressedTexture2D::922110067954713865::1710302675::1710302675::1::::<><>::
 idle_knight_3.png::CompressedTexture2D::325959002977985471::1710302675::1710302675::1::::<><>::
 idle_knight_4.png::CompressedTexture2D::6784909934960626369::1710302675::1710302675::1::::<><>::
 idle_knight_5.png::CompressedTexture2D::58348582957534938::1710302675::1710302675::1::::<><>::
 idle_knight_6.png::CompressedTexture2D::8616390933118061077::1710302675::1710302675::1::::<><>::
-::res://Characters/knight 2/walk/::1710302677
+::res://Characters/knight 2/walk/::1710341839
 walk_knight_1.png::CompressedTexture2D::5231662314103051568::1710302675::1710302675::1::::<><>::
 walk_knight_2.png::CompressedTexture2D::5635629925576144947::1710302676::1710302676::1::::<><>::
 walk_knight_3.png::CompressedTexture2D::8868617937151786273::1710302676::1710302676::1::::<><>::
@@ -113,21 +113,21 @@ walk_knight_9.png::CompressedTexture2D::8198555304554335250::1710302677::1710302
 walk_knight_10.png::CompressedTexture2D::8348785961746737859::1710302675::1710302675::1::::<><>::
 walk_knight_11.png::CompressedTexture2D::4200579372918730630::1710302676::1710302676::1::::<><>::
 walk_knight_12.png::CompressedTexture2D::6340684647662039274::1710302676::1710302676::1::::<><>::
-::res://Characters/skeleton/::1710302680
+::res://Characters/skeleton/::1710341839
 Attack.png::CompressedTexture2D::3179384221298646444::1710302680::1710302680::1::::<><>::
 Death.png::CompressedTexture2D::3223560228794281288::1710302680::1710302680::1::::<><>::
 Idle.png::CompressedTexture2D::1101914749751479263::1710302680::1710302680::1::::<><>::
 Shield.png::CompressedTexture2D::234854542744718468::1710302680::1710302680::1::::<><>::
 Take Hit.png::CompressedTexture2D::3795610941874239862::1710302680::1710302680::1::::<><>::
 Walk.png::CompressedTexture2D::3308105546360550640::1710302680::1710302680::1::::<><>::
-::res://Characters/wizard/::1710302681
+::res://Characters/wizard/::1710341839
 wizard-emission-mask.png::CompressedTexture2D::3351104779776371804::1710302680::1710302681::1::::<><>::
 wizard-fireball-emission.png::CompressedTexture2D::3046199663625602980::1710302681::1710302681::1::::<><>::
 wizard-fireball.png::CompressedTexture2D::201374746885737647::1710302681::1710302681::1::::<><>::
 wizard.png::CompressedTexture2D::2852494283990316850::1710302681::1710302681::1::::<><>::
-::res://Decorations/::1710302695
-::res://Decorations/Animated Decorations/::1710302690
-::res://Decorations/Animated Decorations/candelabrum_small/::1710302682
+::res://Decorations/::1710341839
+::res://Decorations/Animated Decorations/::1710341839
+::res://Decorations/Animated Decorations/candelabrum_small/::1710341839
 candelabrum_small_1.png::CompressedTexture2D::4380537245665930068::1710302681::1710302681::1::::<><>::
 candelabrum_small_2.png::CompressedTexture2D::7465490394026268494::1710302681::1710302681::1::::<><>::
 candelabrum_small_3.png::CompressedTexture2D::5914987583608473491::1710302681::1710302681::1::::<><>::
@@ -135,7 +135,7 @@ candelabrum_small_4.png::CompressedTexture2D::3678893864936655979::1710302681::1
 candelabrum_small_5.png::CompressedTexture2D::2892984229400169079::1710302681::1710302681::1::::<><>::
 candelabrum_small_6.png::CompressedTexture2D::5935419288250665407::1710302681::1710302682::1::::<><>::
 candelabrum_small_nofire.png::CompressedTexture2D::618929740818626887::1710302682::1710302682::1::::<><>::
-::res://Decorations/Animated Decorations/candelabrum_tall/::1710302682
+::res://Decorations/Animated Decorations/candelabrum_tall/::1710341839
 candelabrum_tall_1.png::CompressedTexture2D::7607683147289244604::1710302682::1710302682::1::::<><>::
 candelabrum_tall_2.png::CompressedTexture2D::4832340161076763844::1710302682::1710302682::1::::<><>::
 candelabrum_tall_3.png::CompressedTexture2D::7759656431765968742::1710302682::1710302682::1::::<><>::
@@ -143,56 +143,56 @@ candelabrum_tall_4.png::CompressedTexture2D::7624208676778442741::1710302682::17
 candelabrum_tall_5.png::CompressedTexture2D::9200271009058604915::1710302682::1710302682::1::::<><>::
 candelabrum_tall_6.png::CompressedTexture2D::182029854403982076::1710302682::1710302682::1::::<><>::
 candelabrum_tall_nofire.png::CompressedTexture2D::63189143182146507::1710302682::1710302682::1::::<><>::
-::res://Decorations/Animated Decorations/candle_1/::1710302683
+::res://Decorations/Animated Decorations/candle_1/::1710341839
 candle_1_1.png::CompressedTexture2D::4111773514532389830::1710302683::1710302683::1::::<><>::
 candle_1_2.png::CompressedTexture2D::7741775272839708292::1710302683::1710302683::1::::<><>::
 candle_1_3.png::CompressedTexture2D::8602657721149592089::1710302683::1710302683::1::::<><>::
 candle_1_4.png::CompressedTexture2D::2392937076169584566::1710302683::1710302683::1::::<><>::
 candle_1_5.png::CompressedTexture2D::7183663969927866387::1710302683::1710302683::1::::<><>::
 candle_1_6.png::CompressedTexture2D::8798752686677010396::1710302683::1710302683::1::::<><>::
-::res://Decorations/Animated Decorations/candle_2/::1710302684
+::res://Decorations/Animated Decorations/candle_2/::1710341839
 candle_2_1.png::CompressedTexture2D::3706379282214799466::1710302683::1710302683::1::::<><>::
 candle_2_2.png::CompressedTexture2D::2173972775277241545::1710302683::1710302683::1::::<><>::
 candle_2_3.png::CompressedTexture2D::4476215053851082468::1710302683::1710302683::1::::<><>::
 candle_2_4.png::CompressedTexture2D::5500986762259769666::1710302683::1710302683::1::::<><>::
 candle_2_5.png::CompressedTexture2D::6744953776655590801::1710302683::1710302684::1::::<><>::
 candle_2_6.png::CompressedTexture2D::7323765288233660418::1710302684::1710302684::1::::<><>::
-::res://Decorations/Animated Decorations/candle_3/::1710302684
+::res://Decorations/Animated Decorations/candle_3/::1710341839
 candle_3_1.png::CompressedTexture2D::5777734129139768894::1710302684::1710302684::1::::<><>::
 candle_3_2.png::CompressedTexture2D::6759107586085667301::1710302684::1710302684::1::::<><>::
 candle_3_3.png::CompressedTexture2D::8057755421669018853::1710302684::1710302684::1::::<><>::
 candle_3_4.png::CompressedTexture2D::3874569647131285204::1710302684::1710302684::1::::<><>::
 candle_3_5.png::CompressedTexture2D::8811229877172019990::1710302684::1710302684::1::::<><>::
 candle_3_6.png::CompressedTexture2D::1603070401994991642::1710302684::1710302684::1::::<><>::
-::res://Decorations/Animated Decorations/candle_blue_1/::1710302685
+::res://Decorations/Animated Decorations/candle_blue_1/::1710341839
 candle_blue_1_1.png::CompressedTexture2D::7842888987517991926::1710302684::1710302684::1::::<><>::
 candle_blue_1_2.png::CompressedTexture2D::4047560856832492549::1710302684::1710302685::1::::<><>::
 candle_blue_1_3.png::CompressedTexture2D::1904239199753329950::1710302685::1710302685::1::::<><>::
 candle_blue_1_4.png::CompressedTexture2D::5029507170367874743::1710302685::1710302685::1::::<><>::
 candle_blue_1_5.png::CompressedTexture2D::6873559162574319051::1710302685::1710302685::1::::<><>::
 candle_blue_1_6.png::CompressedTexture2D::985346370909035966::1710302685::1710302685::1::::<><>::
-::res://Decorations/Animated Decorations/candle_blue_2/::1710302686
+::res://Decorations/Animated Decorations/candle_blue_2/::1710341839
 candle_blue_2_1.png::CompressedTexture2D::99446566405921367::1710302685::1710302685::1::::<><>::
 candle_blue_2_2.png::CompressedTexture2D::1931550479547891043::1710302685::1710302685::1::::<><>::
 candle_blue_2_3.png::CompressedTexture2D::2422172152429249447::1710302685::1710302685::1::::<><>::
 candle_blue_2_4.png::CompressedTexture2D::4946084767475502510::1710302685::1710302685::1::::<><>::
 candle_blue_2_5.png::CompressedTexture2D::516344921596329645::1710302685::1710302686::1::::<><>::
 candle_blue_2_6.png::CompressedTexture2D::5858222876914805348::1710302686::1710302686::1::::<><>::
-::res://Decorations/Animated Decorations/candle_blue_3/::1710302686
+::res://Decorations/Animated Decorations/candle_blue_3/::1710341839
 candle_blue_3_1.png::CompressedTexture2D::8208531131175101364::1710302686::1710302686::1::::<><>::
 candle_blue_3_2.png::CompressedTexture2D::769480121973702135::1710302686::1710302686::1::::<><>::
 candle_blue_3_3.png::CompressedTexture2D::7136332776892550236::1710302686::1710302686::1::::<><>::
 candle_blue_3_4.png::CompressedTexture2D::1480581086805461601::1710302686::1710302686::1::::<><>::
 candle_blue_3_5.png::CompressedTexture2D::9081764693133746040::1710302686::1710302686::1::::<><>::
 candle_blue_3_6.png::CompressedTexture2D::3125820552473841517::1710302686::1710302686::1::::<><>::
-::res://Decorations/Animated Decorations/chest/::1710302687
+::res://Decorations/Animated Decorations/chest/::1710341839
 chest_1.png::CompressedTexture2D::4114517807301478305::1710302686::1710302686::1::::<><>::
 chest_2.png::CompressedTexture2D::7651681835482738867::1710302686::1710302687::1::::<><>::
 chest_3.png::CompressedTexture2D::5210660186039852525::1710302687::1710302687::1::::<><>::
 chest_4.png::CompressedTexture2D::5392718828395840596::1710302687::1710302687::1::::<><>::
 chest_5.png::CompressedTexture2D::5135457871476214142::1710302687::1710302687::1::::<><>::
 chest_damaged.png::CompressedTexture2D::2751108180371838146::1710302687::1710302687::1::::<><>::
-::res://Decorations/Animated Decorations/lever_floor/::1710302688
+::res://Decorations/Animated Decorations/lever_floor/::1710341839
 lever_floor_1.png::CompressedTexture2D::11161398272805282::1710302687::1710302687::1::::<><>::
 lever_floor_2.png::CompressedTexture2D::1147048809679213436::1710302687::1710302687::1::::<><>::
 lever_floor_3.png::CompressedTexture2D::5629163624293700793::1710302687::1710302687::1::::<><>::
@@ -200,14 +200,14 @@ lever_floor_4.png::CompressedTexture2D::3799943139474228664::1710302687::1710302
 lever_floor_5.png::CompressedTexture2D::7937876379323374652::1710302687::1710302688::1::::<><>::
 lever_floor_6.png::CompressedTexture2D::6760018806135543767::1710302688::1710302688::1::::<><>::
 lever_floor_7.png::CompressedTexture2D::3759302460097750982::1710302688::1710302688::1::::<><>::
-::res://Decorations/Animated Decorations/lever_wall/::1710302688
+::res://Decorations/Animated Decorations/lever_wall/::1710341839
 lever_wall_1.png::CompressedTexture2D::2998929589390161341::1710302688::1710302688::1::::<><>::
 lever_wall_2.png::CompressedTexture2D::3297374767624224171::1710302688::1710302688::1::::<><>::
 lever_wall_3.png::CompressedTexture2D::9123197026370058562::1710302688::1710302688::1::::<><>::
 lever_wall_4.png::CompressedTexture2D::436226458294004275::1710302688::1710302688::1::::<><>::
 lever_wall_5.png::CompressedTexture2D::347103245803633062::1710302688::1710302688::1::::<><>::
 lever_wall_6.png::CompressedTexture2D::5931033958788578184::1710302688::1710302688::1::::<><>::
-::res://Decorations/Animated Decorations/torch_big/::1710302689
+::res://Decorations/Animated Decorations/torch_big/::1710341839
 torch_big_1.png::CompressedTexture2D::8861877259271381908::1710302688::1710302689::1::::<><>::
 torch_big_2.png::CompressedTexture2D::471727009691223950::1710302689::1710302689::1::::<><>::
 torch_big_3.png::CompressedTexture2D::3018380064799042043::1710302689::1710302689::1::::<><>::
@@ -215,7 +215,7 @@ torch_big_4.png::CompressedTexture2D::616152168979430498::1710302689::1710302689
 torch_big_5.png::CompressedTexture2D::4407462281399202753::1710302689::1710302689::1::::<><>::
 torch_big_6.png::CompressedTexture2D::8738351986372611473::1710302689::1710302689::1::::<><>::
 torch_big_background.png::CompressedTexture2D::2383592655989161013::1710302689::1710302689::1::::<><>::
-::res://Decorations/Animated Decorations/torch_big_blue/::1710302690
+::res://Decorations/Animated Decorations/torch_big_blue/::1710341839
 torch_big_blue_1.png::CompressedTexture2D::3979432700934689305::1710302689::1710302689::1::::<><>::
 torch_big_blue_2.png::CompressedTexture2D::6353258788355127540::1710302689::1710302689::1::::<><>::
 torch_big_blue_3.png::CompressedTexture2D::542530264963020665::1710302689::1710302690::1::::<><>::
@@ -223,7 +223,7 @@ torch_big_blue_4.png::CompressedTexture2D::8322511197976541139::1710302690::1710
 torch_big_blue_5.png::CompressedTexture2D::6841628124152809148::1710302690::1710302690::1::::<><>::
 torch_big_blue_6.png::CompressedTexture2D::6661786947214730252::1710302690::1710302690::1::::<><>::
 torch_big_blue_background.png::CompressedTexture2D::2287348560777422715::1710302690::1710302690::1::::<><>::
-::res://Decorations/Animated Decorations/torch_small/::1710302690
+::res://Decorations/Animated Decorations/torch_small/::1710341839
 torch_small_1.png::CompressedTexture2D::1674038586488766339::1710302690::1710302690::1::::<><>::
 torch_small_2.png::CompressedTexture2D::6813647215847820714::1710302690::1710302690::1::::<><>::
 torch_small_3.png::CompressedTexture2D::3034909917673330745::1710302690::1710302690::1::::<><>::
@@ -231,7 +231,7 @@ torch_small_4.png::CompressedTexture2D::5666865252366070033::1710302690::1710302
 torch_small_5.png::CompressedTexture2D::188127076160615367::1710302690::1710302690::1::::<><>::
 torch_small_6.png::CompressedTexture2D::1595699795152494949::1710302690::1710302690::1::::<><>::
 torch_small_background.png::CompressedTexture2D::6137941298356206397::1710302690::1710302690::1::::<><>::
-::res://Decorations/Animated Decorations/torch_small_blue/::1710302691
+::res://Decorations/Animated Decorations/torch_small_blue/::1710341839
 torch_small_blue_1.png::CompressedTexture2D::9045065907858478567::1710302691::1710302691::1::::<><>::
 torch_small_blue_2.png::CompressedTexture2D::1662784028167096643::1710302691::1710302691::1::::<><>::
 torch_small_blue_3.png::CompressedTexture2D::5832647658614959443::1710302691::1710302691::1::::<><>::
@@ -239,7 +239,7 @@ torch_small_blue_4.png::CompressedTexture2D::6852775829379408420::1710302691::17
 torch_small_blue_5.png::CompressedTexture2D::5573049445937310368::1710302691::1710302691::1::::<><>::
 torch_small_blue_6.png::CompressedTexture2D::7082691378515842460::1710302691::1710302691::1::::<><>::
 torch_small_blue_background.png::CompressedTexture2D::2558179095219854241::1710302691::1710302691::1::::<><>::
-::res://Decorations/Castle/::1710302695
+::res://Decorations/Castle/::1710341839
 axe.png::CompressedTexture2D::5390535873736011833::1710302691::1710302691::1::::<><>::
 bag_1.png::CompressedTexture2D::2253312819181834531::1710302691::1710302691::1::::<><>::
 bag_2.png::CompressedTexture2D::849607451825572408::1710302691::1710302691::1::::<><>::
@@ -281,7 +281,7 @@ weapon_rack.png::CompressedTexture2D::5253473486173688560::1710302695::171030269
 wood_plank_1.png::CompressedTexture2D::2920337442691092080::1710302695::1710302695::1::::<><>::
 wood_plank_2.png::CompressedTexture2D::6346504189970430387::1710302695::1710302695::1::::<><>::
 wood_plank_3.png::CompressedTexture2D::8473280411391697448::1710302695::1710302695::1::::<><>::
-::res://Decorations/oak_wood/::1710302696
+::res://Decorations/oak_wood/::1710341839
 fence_1.png::CompressedTexture2D::2604942437689439329::1710302695::1710302695::1::::<><>::
 fence_2.png::CompressedTexture2D::5949980245255906427::1710302695::1710302695::1::::<><>::
 grass_1.png::CompressedTexture2D::1317946554293752941::1710302695::1710302695::1::::<><>::
@@ -294,56 +294,56 @@ rock_3.png::CompressedTexture2D::9089363918797190211::1710302696::1710302696::1:
 shop.png::CompressedTexture2D::8173464547716567291::1710302696::1710302696::1::::<><>::
 shop_anim.png::CompressedTexture2D::6278914484494275489::1710302696::1710302696::1::::<><>::
 sign.png::CompressedTexture2D::9065976058652031489::1710302696::1710302696::1::::<><>::
-::res://docs/::1710302716
+::res://docs/::1710341893
 АКД_Коллективная_разраб.png::CompressedTexture2D::9118305147451513972::1710302715::1710302715::1::::<><>::
 Общая_архитектура_игры.png::CompressedTexture2D::1271987202431004326::1710302716::1710302716::1::::<><>::
-::res://gothicvania-cemetery-files/::1710302716
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/::1710302725
+::res://gothicvania-cemetery-files/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/::1710341839
 public-license.txt::TextFile::-1::1710302716::0::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/::1710302725
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/::1710302727
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/atlas/::1710302726
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/atlas/::1710341839
 atlas-props.json::JSON::-1::1710302725::0::1::::<><>::
 atlas-props.png::CompressedTexture2D::6325220371272792914::1710302725::1710302725::1::::<><>::
 atlas.json::JSON::-1::1710302725::0::1::::<><>::
 atlas.png::CompressedTexture2D::2045019613959390965::1710302726::1710302726::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/environment/::1710302726
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/environment/::1710341839
 bg-graveyard.png::CompressedTexture2D::4995141946232486300::1710302726::1710302726::1::::<><>::
 bg-moon.png::CompressedTexture2D::2576648785941014066::1710302726::1710302726::1::::<><>::
 bg-mountains.png::CompressedTexture2D::466873331374816221::1710302726::1710302726::1::::<><>::
 objects.png::CompressedTexture2D::6341418571156352061::1710302726::1710302726::1::::<><>::
 tileset.png::CompressedTexture2D::4902623837729924832::1710302726::1710302726::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/maps/::1710302726
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/maps/::1710341839
 map.json::JSON::-1::1710302726::0::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/sounds/::1710302727
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/sounds/::1710341839
 attack.ogg::AudioStreamOggVorbis::3451280461973851872::1710302726::1710302726::1::::<><>::
 hurt.ogg::AudioStreamOggVorbis::3987483688498313457::1710302726::1710302726::1::::<><>::
 jump.ogg::AudioStreamOggVorbis::4489593534915833235::1710302726::1710302726::1::::<><>::
 kill.ogg::AudioStreamOggVorbis::6019546398392904968::1710302726::1710302727::1::::<><>::
 rise.ogg::AudioStreamOggVorbis::351338098613014640::1710302727::1710302727::1::::<><>::
 sci_fi_platformer04_main_loop.ogg::AudioStreamOggVorbis::5487251238101943934::1710302727::1710302727::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/sprites/::1710302727
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/demo/assets/sprites/::1710341839
 credits-text.png::CompressedTexture2D::9019134197813982928::1710302727::1710302727::1::::<><>::
 game-over.png::CompressedTexture2D::7563582902601978281::1710302727::1710302727::1::::<><>::
 instructions.png::CompressedTexture2D::4366109441645240327::1710302727::1710302727::1::::<><>::
 loading.png::CompressedTexture2D::4580652225518533311::1710302727::1710302727::1::::<><>::
 press-enter-text.png::CompressedTexture2D::7405925975343771996::1710302727::1710302727::1::::<><>::
 title-screen.png::CompressedTexture2D::195426446723799872::1710302727::1710302727::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/::1710302716
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/ghost/::1710302716
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/hell-gato/::1710302716
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/hero/::1710302716
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/misc/::1710302716
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/skeleton/::1710302716
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/::1710302718
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/::1710302717
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/ghost/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/hell-gato/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/hero/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/misc/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/GIFS/skeleton/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/::1710341839
 background.png::CompressedTexture2D::725579644206551641::1710302716::1710302716::1::::<><>::
 graveyard.png::CompressedTexture2D::80576367888841599::1710302716::1710302716::1::::<><>::
 mountains.png::CompressedTexture2D::6091026244437284219::1710302716::1710302717::1::::<><>::
 objects.png::CompressedTexture2D::3460889090097518626::1710302717::1710302717::1::::<><>::
 tileset-sliced.png::CompressedTexture2D::1211310674074616357::1710302717::1710302717::1::::<><>::
 tileset.png::CompressedTexture2D::3651766457990508422::1710302717::1710302717::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/sliced-objects/::1710302718
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/sliced-objects/::1710341839
 bush-large.png::CompressedTexture2D::3066981127520881116::1710302717::1710302717::1::::<><>::
 bush-small.png::CompressedTexture2D::6607101533259933671::1710302717::1710302717::1::::<><>::
 statue.png::CompressedTexture2D::2668195890497202666::1710302717::1710302717::1::::<><>::
@@ -354,58 +354,58 @@ stone-4.png::CompressedTexture2D::2503449050848413133::1710302717::1710302717::1
 tree-1.png::CompressedTexture2D::1779730253133086496::1710302717::1710302717::1::::<><>::
 tree-2.png::CompressedTexture2D::7022309506903148789::1710302717::1710302717::1::::<><>::
 tree-3.png::CompressedTexture2D::3340807098900395183::1710302718::1710302718::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/::1710302723
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/enemy-death/::1710302718
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/enemy-death/::1710341839
 enemy-death-1.png::CompressedTexture2D::5736381278814693534::1710302718::1710302718::1::::<><>::
 enemy-death-2.png::CompressedTexture2D::6077776801068873401::1710302718::1710302718::1::::<><>::
 enemy-death-3.png::CompressedTexture2D::7658337993113242733::1710302718::1710302718::1::::<><>::
 enemy-death-4.png::CompressedTexture2D::607073219280497983::1710302718::1710302718::1::::<><>::
 enemy-death-5.png::CompressedTexture2D::3987066873268034770::1710302718::1710302718::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/ghost/::1710302719
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/ghost/::1710341839
 ghost-1.png::CompressedTexture2D::2929505408730684323::1710302718::1710302718::1::::<><>::
 ghost-2.png::CompressedTexture2D::3109303743700826387::1710302718::1710302719::1::::<><>::
 ghost-3.png::CompressedTexture2D::3268519529607767669::1710302719::1710302719::1::::<><>::
 ghost-4.png::CompressedTexture2D::985447165379846878::1710302719::1710302719::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/::1710302718
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/::1710341839
 ghost-halo-1.png::CompressedTexture2D::7975177419505221450::1710302718::1710302718::1::::<><>::
 ghost-halo-2.png::CompressedTexture2D::6662366906135276961::1710302718::1710302718::1::::<><>::
 ghost-halo-3.png::CompressedTexture2D::4739820097729182938::1710302718::1710302718::1::::<><>::
 ghost-halo-4.png::CompressedTexture2D::7766159281424067676::1710302718::1710302718::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hell-gato/::1710302719
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hell-gato/::1710341839
 hell-gato-1.png::CompressedTexture2D::5166242308725413888::1710302719::1710302719::1::::<><>::
 hell-gato-2.png::CompressedTexture2D::3403539565546720152::1710302719::1710302719::1::::<><>::
 hell-gato-3.png::CompressedTexture2D::8863905690785264858::1710302719::1710302719::1::::<><>::
 hell-gato-4.png::CompressedTexture2D::1944641040179237641::1710302719::1710302719::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/::1710302721
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-attack/::1710302719
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-attack/::1710341839
 hero-attack-1.png::CompressedTexture2D::247545221454362505::1710302719::1710302719::1::::<><>::
 hero-attack-2.png::CompressedTexture2D::6453090513961356966::1710302719::1710302719::1::::<><>::
 hero-attack-3.png::CompressedTexture2D::6562338699389940705::1710302719::1710302719::1::::<><>::
 hero-attack-4.png::CompressedTexture2D::1312278807349652042::1710302719::1710302719::1::::<><>::
 hero-attack-5.png::CompressedTexture2D::4851450282256537277::1710302719::1710302720::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-crouch/::1710302720
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-crouch/::1710341839
 hero-crouch.png::CompressedTexture2D::6109050097128646915::1710302720::1710302720::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-hurt/::1710302720
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-hurt/::1710341839
 hero-hurt.png::CompressedTexture2D::620517711160166544::1710302720::1710302720::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-idle/::1710302720
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-idle/::1710341839
 hero-idle-1.png::CompressedTexture2D::3202257317198072836::1710302720::1710302720::1::::<><>::
 hero-idle-2.png::CompressedTexture2D::6411755099505098028::1710302720::1710302720::1::::<><>::
 hero-idle-3.png::CompressedTexture2D::1562686099887032341::1710302720::1710302720::1::::<><>::
 hero-idle-4.png::CompressedTexture2D::7280298639725381252::1710302720::1710302720::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-jump/::1710302720
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-jump/::1710341839
 hero-jump-1.png::CompressedTexture2D::104414139072104284::1710302720::1710302720::1::::<><>::
 hero-jump-2.png::CompressedTexture2D::4290025653357122218::1710302720::1710302720::1::::<><>::
 hero-jump-3.png::CompressedTexture2D::8075237313793282598::1710302720::1710302720::1::::<><>::
 hero-jump-4.png::CompressedTexture2D::494111587249787727::1710302720::1710302721::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-run/::1710302721
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/hero-run/::1710341839
 hero-run-1.png::CompressedTexture2D::3586511486374219775::1710302721::1710302721::1::::<><>::
 hero-run-2.png::CompressedTexture2D::1036478110170658766::1710302721::1710302721::1::::<><>::
 hero-run-3.png::CompressedTexture2D::5044563674480888776::1710302721::1710302721::1::::<><>::
 hero-run-4.png::CompressedTexture2D::8342171866914302042::1710302721::1710302721::1::::<><>::
 hero-run-5.png::CompressedTexture2D::2071534107793730057::1710302721::1710302721::1::::<><>::
 hero-run-6.png::CompressedTexture2D::325611618743873477::1710302721::1710302721::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/previews/::1710302721
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/skeleton/::1710302724
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/hero/previews/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/skeleton/::1710341839
 skeleton-1.png::CompressedTexture2D::6424619255375972434::1710302723::1710302723::1::::<><>::
 skeleton-2.png::CompressedTexture2D::1270048625316820146::1710302723::1710302723::1::::<><>::
 skeleton-3.png::CompressedTexture2D::2089403055336323708::1710302723::1710302723::1::::<><>::
@@ -414,7 +414,7 @@ skeleton-5.png::CompressedTexture2D::69632972455919804::1710302723::1710302724::
 skeleton-6.png::CompressedTexture2D::3367667112542378322::1710302724::1710302724::1::::<><>::
 skeleton-7.png::CompressedTexture2D::4999358726673304140::1710302724::1710302724::1::::<><>::
 skeleton-8.png::CompressedTexture2D::6736738642772646227::1710302724::1710302724::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/skeleton-clothed/::1710302722
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/skeleton-clothed/::1710341839
 skeleton-clothed-1.png::CompressedTexture2D::7670856782786779296::1710302721::1710302721::1::::<><>::
 skeleton-clothed-2.png::CompressedTexture2D::5349427738761595959::1710302721::1710302722::1::::<><>::
 skeleton-clothed-3.png::CompressedTexture2D::9195602737266093709::1710302722::1710302722::1::::<><>::
@@ -423,57 +423,57 @@ skeleton-clothed-5.png::CompressedTexture2D::7419455699036278002::1710302722::17
 skeleton-clothed-6.png::CompressedTexture2D::4512425317384820685::1710302722::1710302722::1::::<><>::
 skeleton-clothed-7.png::CompressedTexture2D::5225580282017141243::1710302722::1710302722::1::::<><>::
 skeleton-clothed-8.png::CompressedTexture2D::3847639124528606311::1710302722::1710302722::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/skeleton-rise/::1710302723
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/skeleton-rise/::1710341839
 skeleton-rise-1.png::CompressedTexture2D::7729710178535802925::1710302723::1710302723::1::::<><>::
 skeleton-rise-2.png::CompressedTexture2D::2690050505501706290::1710302723::1710302723::1::::<><>::
 skeleton-rise-3.png::CompressedTexture2D::6993116006952491844::1710302723::1710302723::1::::<><>::
 skeleton-rise-4.png::CompressedTexture2D::6729648476381623484::1710302723::1710302723::1::::<><>::
 skeleton-rise-5.png::CompressedTexture2D::7184167381689175842::1710302723::1710302723::1::::<><>::
 skeleton-rise-6.png::CompressedTexture2D::6900894428002517589::1710302723::1710302723::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/skeleton-rise-clothed/::1710302723
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Sprites/skeleton-rise-clothed/::1710341839
 skeleton-rise-clothed-1.png::CompressedTexture2D::1166837075231483345::1710302722::1710302722::1::::<><>::
 skeleton-rise-clothed-2.png::CompressedTexture2D::6890787183987890496::1710302722::1710302722::1::::<><>::
 skeleton-rise-clothed-3.png::CompressedTexture2D::6932107592231042168::1710302722::1710302722::1::::<><>::
 skeleton-rise-clothed-4.png::CompressedTexture2D::8966985224806242686::1710302722::1710302722::1::::<><>::
 skeleton-rise-clothed-5.png::CompressedTexture2D::1389670535515809711::1710302723::1710302723::1::::<><>::
 skeleton-rise-clothed-6.png::CompressedTexture2D::997302883981463494::1710302723::1710302723::1::::<><>::
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/::1710302724
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/environment/::1710302724
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/misc/::1710302724
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/sprites/::1710302724
-::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/sprites/hero/::1710302725
-::res://HUD/::1710302697
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/environment/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/misc/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/sprites/::1710341839
+::res://gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/sprites/hero/::1710341839
+::res://HUD/::1710341839
 bar.png::CompressedTexture2D::200255429258543882::1710302696::1710302696::1::::<><>::
 bar_background.png::CompressedTexture2D::8375774137492865045::1710302697::1710302697::1::::<><>::
 health_bar.png::CompressedTexture2D::8105056574788418750::1710302697::1710302697::1::::<><>::
 weapon_icon.png::CompressedTexture2D::8649814123624881754::1710302697::1710302697::1::::<><>::
-::res://Scenes/::1710316592
+::res://Scenes/::1710341895
 background.tscn::PackedScene::8718074401512786483::1710302697::0::1::::<><>::res://Scenes/ParallaxBackground.gd<>uid://dwgt37wclc7ia::::res://Background/oak_wood/background_layer_1.png<>uid://bf1386hi8jbl0::::res://Background/oak_wood/background_layer_2.png<>uid://k7jdnm701q0f::::res://Background/oak_wood/background_layer_3.png
 Background_test_bg.gd::GDScript::-1::1710302697::0::1::::<>ParallaxBackground<>::
 bar.png::CompressedTexture2D::2040205038452077549::1710302697::1710302697::1::::<><>::
 damage_box.tscn::PackedScene::6557869232635001554::1710302697::0::1::::<><>::
 finish_scene.tscn::PackedScene::252513958234975697::1710302697::0::1::::<><>::uid://ue0w1sfwot62::::res://Scenes/test_bg.tscn
-fireball.tscn::PackedScene::7894519965784050174::1710315333::0::1::::<><>::uid://c4su3h8unda2::::res://Characters/wizard/wizard-fireball.png
-first_level.tscn::PackedScene::4292997104402745281::1710315732::0::1::::<><>::res://Scenes/node_2d.gd<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://bccpk4kg1cwq0::::res://Tiles/oak_wood/oak_woods_tileset.png<>uid://d2fvkidvj1cyj::::res://Decorations/oak_wood/sign.png<>uid://dwgt37wclc7ia::::res://Background/oak_wood/background_layer_1.png<>uid://bf1386hi8jbl0::::res://Background/oak_wood/background_layer_2.png<>uid://dr07s5uah3k74::::res://Decorations/oak_wood/rock_2.png<>uid://k7jdnm701q0f::::res://Background/oak_wood/background_layer_3.png<>uid://d2q7q4d0fxkyd::::res://Decorations/oak_wood/rock_3.png<>uid://drlj1no23x63j::::res://HUD/bar_background.png<>uid://c4agbm3ntb2i::::res://HUD/bar.png<>uid://x36f2uuo3cut::::res://Decorations/Animated Decorations/torch_small/torch_small_1.png<>uid://dnqfdk38mtml7::::res://HUD/health_bar.png<>uid://c4ct1k6sevt8u::::res://Decorations/Animated Decorations/torch_small/torch_small_2.png<>uid://snu2udydmmr0::::res://Decorations/oak_wood/lamp.png<>uid://bjier1rtepu5v::::res://Decorations/Animated Decorations/torch_small/torch_small_3.png<>uid://cm0cpb3ruwjvt::::res://Decorations/Animated Decorations/torch_small/torch_small_4.png<>uid://dopj1ct6iibax::::res://Decorations/oak_wood/shop.png<>uid://cxeop3hyn45p::::res://Decorations/Animated Decorations/torch_small/torch_small_5.png<>uid://byejs82y4sojk::::res://Decorations/oak_wood/rock_1.png<>uid://bdd4ayxuwu5ub::::res://Decorations/oak_wood/fence_1.png<>uid://wy77brxldf4p::::res://Decorations/Animated Decorations/torch_small/torch_small_6.png<>uid://cq1hkm768ric6::::res://Decorations/oak_wood/fence_2.png<>uid://che456ghxf3fr::::res://Scenes/player.tscn<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://bc5aqtpany3k5::::res://icon.svg<>uid://c7p0keui0cbvl::::res://Scenes/wizard.tscn<>uid://cldhoay1fyxrj::::res://Scenes/heal_potion.tscn<>res://Scenes/Label.gd<>uid://dhsiqxtihs4rj::::res://Characters/Joanna/Idle/Idle1.png<>uid://fth68n4agvcy::::res://Characters/Joanna/Idle/Idle2.png<>uid://dip1ns05wuccl::::res://Characters/Joanna/Idle/Idle3.png<>uid://cvxhs6hky2be6::::res://Characters/Joanna/Idle/Idle4.png<>uid://41oryr1571kp::::res://Characters/Joanna/Idle/Idle5.png<>uid://eukxfk8ehj6j::::res://Characters/Joanna/Idle/Idle6.png
+fireball.tscn::PackedScene::7894519965784050174::1710394623::0::1::::<><>::uid://c4su3h8unda2::::res://Characters/wizard/wizard-fireball.png
+first_level.tscn::PackedScene::4292997104402745281::1710394621::0::1::::<><>::res://Scenes/node_2d.gd<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://bccpk4kg1cwq0::::res://Tiles/oak_wood/oak_woods_tileset.png<>uid://d2fvkidvj1cyj::::res://Decorations/oak_wood/sign.png<>uid://dwgt37wclc7ia::::res://Background/oak_wood/background_layer_1.png<>uid://bf1386hi8jbl0::::res://Background/oak_wood/background_layer_2.png<>uid://dr07s5uah3k74::::res://Decorations/oak_wood/rock_2.png<>uid://k7jdnm701q0f::::res://Background/oak_wood/background_layer_3.png<>uid://d2q7q4d0fxkyd::::res://Decorations/oak_wood/rock_3.png<>uid://drlj1no23x63j::::res://HUD/bar_background.png<>uid://c4agbm3ntb2i::::res://HUD/bar.png<>uid://x36f2uuo3cut::::res://Decorations/Animated Decorations/torch_small/torch_small_1.png<>uid://dnqfdk38mtml7::::res://HUD/health_bar.png<>uid://c4ct1k6sevt8u::::res://Decorations/Animated Decorations/torch_small/torch_small_2.png<>uid://snu2udydmmr0::::res://Decorations/oak_wood/lamp.png<>uid://bjier1rtepu5v::::res://Decorations/Animated Decorations/torch_small/torch_small_3.png<>uid://cm0cpb3ruwjvt::::res://Decorations/Animated Decorations/torch_small/torch_small_4.png<>uid://dopj1ct6iibax::::res://Decorations/oak_wood/shop.png<>uid://cxeop3hyn45p::::res://Decorations/Animated Decorations/torch_small/torch_small_5.png<>uid://byejs82y4sojk::::res://Decorations/oak_wood/rock_1.png<>uid://bdd4ayxuwu5ub::::res://Decorations/oak_wood/fence_1.png<>uid://wy77brxldf4p::::res://Decorations/Animated Decorations/torch_small/torch_small_6.png<>uid://cq1hkm768ric6::::res://Decorations/oak_wood/fence_2.png<>uid://che456ghxf3fr::::res://Scenes/player.tscn<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://bc5aqtpany3k5::::res://icon.svg<>uid://c7p0keui0cbvl::::res://Scenes/wizard.tscn<>uid://cldhoay1fyxrj::::res://Scenes/heal_potion.tscn<>res://Scenes/Label.gd<>uid://dhsiqxtihs4rj::::res://Characters/Joanna/Idle/Idle1.png<>uid://fth68n4agvcy::::res://Characters/Joanna/Idle/Idle2.png<>uid://dip1ns05wuccl::::res://Characters/Joanna/Idle/Idle3.png<>uid://cvxhs6hky2be6::::res://Characters/Joanna/Idle/Idle4.png<>uid://41oryr1571kp::::res://Characters/Joanna/Idle/Idle5.png<>uid://eukxfk8ehj6j::::res://Characters/Joanna/Idle/Idle6.png
 heal_potion.gd::GDScript::-1::1710302698::0::1::::<>Area2D<>::
-heal_potion.tscn::PackedScene::5551561838995050615::1710315333::0::1::::<><>::uid://dmvu5fb0hbta7::::res://Decorations/Castle/potion_1.png<>res://Scenes/heal_potion.gd
+heal_potion.tscn::PackedScene::5551561838995050615::1710394623::0::1::::<><>::uid://dmvu5fb0hbta7::::res://Decorations/Castle/potion_1.png<>res://Scenes/heal_potion.gd
 Label.gd::GDScript::-1::1710302697::0::1::::<>Label<>::
 level2.gd::GDScript::-1::1710302698::0::1::::<>Node2D<>::
-level2.tscn::PackedScene::1163570292204644251::1710315333::0::1::::<><>::uid://ceqctosllbp1w::::res://Tiles/Castle/floor_tile_carpet_2.png<>uid://dh17dvkd78o5n::::res://Background/layer_1.png<>res://Scenes/level2.gd<>uid://snu2udydmmr0::::res://Decorations/oak_wood/lamp.png<>uid://cidla4y1rux18::::res://Background/layer_2.png<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://c0elt4cpuccau::::res://Decorations/Castle/barrel.png<>uid://xihj1gost7uw::::res://Tiles/Castle/floor_tile_4.png<>uid://df5wb1egjiivj::::res://Background/layer_3.png<>uid://che456ghxf3fr::::res://Scenes/player.tscn<>uid://di2d000g2frbs::::res://Tiles/Castle/floor_tile_1.png<>uid://7dry6iv1rvtb::::res://Decorations/Castle/bag_1.png<>uid://mds57wkyswia::::res://Decorations/Castle/bag_2.png<>uid://oc77jthipipk::::res://Decorations/Castle/barrel_damaged.png<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://c7p0keui0cbvl::::res://Scenes/wizard.tscn<>uid://drlj1no23x63j::::res://HUD/bar_background.png<>uid://c4agbm3ntb2i::::res://HUD/bar.png<>uid://dnqfdk38mtml7::::res://HUD/health_bar.png<>res://Scenes/Label.gd<>uid://cldhoay1fyxrj::::res://Scenes/heal_potion.tscn<>uid://do4yqu2j23nr8::::res://Characters/Eleonore/Idle/Idle1.png<>uid://cn7m7agrq2s2y::::res://Characters/Eleonore/Idle/Idle2.png<>uid://ducoymh6780bn::::res://Characters/Eleonore/Idle/Idle3.png<>uid://baoeusn5ya1t::::res://Characters/Eleonore/Idle/Idle4.png<>uid://cr1j4j0ynf46b::::res://Characters/Eleonore/Idle/Idle5.png<>uid://chrm6awkwnne7::::res://Characters/Eleonore/Idle/Idle6.png<>uid://du2ir8cnyyufq::::res://Characters/Eleonore/Idle/Idle7.png<>uid://b300o61fbmeka::::res://Characters/Eleonore/Idle/Idle8.png<>uid://buk3hea1l7f65::::res://Characters/Eleonore/Idle/Idle9.png
+level2.tscn::PackedScene::1163570292204644251::1710394679::0::1::::<><>::uid://ceqctosllbp1w::::res://Tiles/Castle/floor_tile_carpet_2.png<>uid://dh17dvkd78o5n::::res://Background/layer_1.png<>res://Scenes/level2.gd<>uid://snu2udydmmr0::::res://Decorations/oak_wood/lamp.png<>uid://cidla4y1rux18::::res://Background/layer_2.png<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://c0elt4cpuccau::::res://Decorations/Castle/barrel.png<>uid://xihj1gost7uw::::res://Tiles/Castle/floor_tile_4.png<>uid://df5wb1egjiivj::::res://Background/layer_3.png<>uid://che456ghxf3fr::::res://Scenes/player.tscn<>uid://di2d000g2frbs::::res://Tiles/Castle/floor_tile_1.png<>uid://7dry6iv1rvtb::::res://Decorations/Castle/bag_1.png<>uid://mds57wkyswia::::res://Decorations/Castle/bag_2.png<>uid://oc77jthipipk::::res://Decorations/Castle/barrel_damaged.png<>uid://2dfbhhwiiweu::::res://Tiles/Castle/ceiling_1.png<>uid://cbnc62yv6mdqt::::res://Tiles/Castle/ceiling_transparent_1.png<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://bf0njucxqwhvk::::res://Tiles/Castle/ceiling_transparent_2.png<>uid://ch8u0ne0kq02d::::res://Tiles/Castle/floor_tile_carpet_1.png<>uid://c7p0keui0cbvl::::res://Scenes/wizard.tscn<>uid://drlj1no23x63j::::res://HUD/bar_background.png<>uid://c4agbm3ntb2i::::res://HUD/bar.png<>uid://coss5712mfqyw::::res://Tiles/Castle/floor_tile_carpet_3.png<>uid://dnqfdk38mtml7::::res://HUD/health_bar.png<>uid://bh0rnvvej41fn::::res://Tiles/Castle/floor_tile_carpet_4.png<>res://Scenes/Label.gd<>uid://drc60w53h82q1::::res://Tiles/Castle/floor_tile_carpet_corner_left.png<>uid://b2dv7isb8uuj5::::res://Tiles/Castle/floor_tile_carpet_corner_right.png<>uid://cldhoay1fyxrj::::res://Scenes/heal_potion.tscn<>uid://bmqns3q5lpts2::::res://Tiles/Castle/floor_tile_carpet_transition_1.png<>uid://vbth2ciceix0::::res://Tiles/Castle/floor_tile_carpet_transition_2.png<>uid://daki2qudv36nc::::res://Tiles/Castle/floor_tile_corner_left.png<>uid://jkvr886kboo4::::res://Tiles/Castle/floor_tile_corner_right.png<>uid://be8vjuof5kewm::::res://Tiles/Castle/floor_tile_wood_carpet_transition_1.png<>uid://dkxbhjcund8t6::::res://Tiles/Castle/floor_tile_wood_carpet_transition_2.png<>uid://do4yqu2j23nr8::::res://Characters/Eleonore/Idle/Idle1.png<>uid://cn7m7agrq2s2y::::res://Characters/Eleonore/Idle/Idle2.png<>uid://bhqphldyovyi::::res://Tiles/Castle/floor_tile_wood_transition_1.png<>uid://ducoymh6780bn::::res://Characters/Eleonore/Idle/Idle3.png<>uid://duhxjc34bxppa::::res://Tiles/Castle/floor_tile_wood_transition_2.png<>uid://baoeusn5ya1t::::res://Characters/Eleonore/Idle/Idle4.png<>uid://ce7renkgap4vq::::res://Tiles/Castle/floor_wood_1.png<>uid://cr1j4j0ynf46b::::res://Characters/Eleonore/Idle/Idle5.png<>uid://clsu2fkgv6ucm::::res://Tiles/Castle/floor_wood_2.png<>uid://chrm6awkwnne7::::res://Characters/Eleonore/Idle/Idle6.png<>uid://b7gitbaq0rnlh::::res://Tiles/Castle/floor_wood_3.png<>uid://du2ir8cnyyufq::::res://Characters/Eleonore/Idle/Idle7.png<>uid://c7tgygt5it3id::::res://Tiles/Castle/floor_wood_4.png<>uid://b300o61fbmeka::::res://Characters/Eleonore/Idle/Idle8.png<>uid://cf40opmb61db::::res://Tiles/Castle/floor_wood_carpet_1.png<>uid://buk3hea1l7f65::::res://Characters/Eleonore/Idle/Idle9.png<>uid://qf8yby4n7ei4::::res://Tiles/Castle/floor_wood_carpet_2.png<>uid://btoi2avudp3m7::::res://Tiles/Castle/floor_wood_carpet_3.png<>uid://dn3etra7w42s5::::res://Tiles/Castle/floor_wood_carpet_4.png<>uid://b2irssbsywy2a::::res://Tiles/Castle/floor_wood_carpet_corner_left.png<>uid://boc1ucvx6qiup::::res://Tiles/Castle/floor_wood_carpet_corner_right.png<>uid://c1c7sjubqiujq::::res://Tiles/Castle/floor_wood_carpet_transition_1.png<>uid://dwqv2u8o6rm6j::::res://Tiles/Castle/floor_wood_carpet_transition_2.png<>uid://csj8a4kheldgp::::res://Tiles/Castle/floor_wood_corner_left.png<>uid://5arg8f56drho::::res://Tiles/Castle/floor_wood_corner_right.png<>uid://dvmrwtd5cqo5l::::res://Tiles/Castle/tile_side_left.png<>uid://blccsgyoq1eng::::res://Tiles/Castle/tile_side_right.png<>uid://b2fy57uvkvb5x::::res://Tiles/Castle/stairs_tile_carpet_3.png<>uid://olbvmmfjc4v6::::res://Tiles/Castle/ceiling_2.png<>uid://dq1k77qep8bn7::::res://Tiles/Castle/ceiling_3.png<>uid://cjrj42v6xcj4u::::res://Tiles/Castle/stairs_tile_carpet_4.png<>uid://6ygd4egbe700::::res://Tiles/Castle/ceiling_4.png<>uid://j18f3ipl3dfo::::res://Tiles/Castle/ceiling_corner_left.png<>uid://reawdif4qa7l::::res://Tiles/Castle/ceiling_corner_right.png<>uid://d14q6ct6ptjet::::res://Decorations/Animated Decorations/torch_small_blue/torch_small_blue_1.png<>uid://xxp2smtau3vj::::res://Decorations/Animated Decorations/torch_small_blue/torch_small_blue_2.png<>uid://cpdm4cefe53xf::::res://Decorations/Animated Decorations/torch_small_blue/torch_small_blue_3.png<>uid://c4vshmrpdl2ps::::res://Decorations/Animated Decorations/torch_small_blue/torch_small_blue_4.png<>uid://clnvksr20rq6k::::res://Decorations/Animated Decorations/torch_small_blue/torch_small_blue_5.png<>uid://c7555lnolonce::::res://Decorations/Animated Decorations/torch_small_blue/torch_small_blue_6.png<>uid://do7jkqtjthmnc::::res://Decorations/Animated Decorations/candle_blue_3/candle_blue_3_1.png<>uid://k70hwky1axwp::::res://Decorations/Animated Decorations/candle_blue_3/candle_blue_3_2.png<>uid://c8w5mgc4dtqm3::::res://Decorations/Animated Decorations/candle_blue_3/candle_blue_3_3.png<>uid://vdg7pbislrv2::::res://Decorations/Animated Decorations/candle_blue_3/candle_blue_3_4.png<>uid://d2njlqkl1tkfo::::res://Decorations/Animated Decorations/candle_blue_3/candle_blue_3_5.png<>uid://bksf2p3hd6vtl::::res://Decorations/Animated Decorations/candle_blue_3/candle_blue_3_6.png
 menu.tscn::PackedScene::3358423264396014852::1710302698::0::1::::<><>::uid://dwhdn85erdvqx::::res://Scenes/background.tscn<>uid://ue0w1sfwot62::::res://Scenes/test_bg.tscn
 node_2d.gd::GDScript::-1::1710302698::0::1::::<>Node2D<>::
-node_2d.tscn::PackedScene::1726867411202997221::1710316592::0::1::::<><>::uid://che456ghxf3fr::::res://Scenes/player.tscn<>res://Scenes/node_2d.gd<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://bccpk4kg1cwq0::::res://Tiles/oak_wood/oak_woods_tileset.png<>uid://bdd4ayxuwu5ub::::res://Decorations/oak_wood/fence_1.png<>uid://dopj1ct6iibax::::res://Decorations/oak_wood/shop.png<>uid://cq1hkm768ric6::::res://Decorations/oak_wood/fence_2.png<>uid://d2fvkidvj1cyj::::res://Decorations/oak_wood/sign.png<>uid://dwgt37wclc7ia::::res://Background/oak_wood/background_layer_1.png<>uid://bf1386hi8jbl0::::res://Background/oak_wood/background_layer_2.png<>uid://d2q7q4d0fxkyd::::res://Decorations/oak_wood/rock_3.png<>uid://snu2udydmmr0::::res://Decorations/oak_wood/lamp.png<>uid://k7jdnm701q0f::::res://Background/oak_wood/background_layer_3.png<>uid://dr07s5uah3k74::::res://Decorations/oak_wood/rock_2.png<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://drlj1no23x63j::::res://HUD/bar_background.png<>uid://c4agbm3ntb2i::::res://HUD/bar.png<>uid://c7p0keui0cbvl::::res://Scenes/wizard.tscn<>uid://dnqfdk38mtml7::::res://HUD/health_bar.png<>uid://fth68n4agvcy::::res://Characters/Joanna/Idle/Idle2.png<>uid://dip1ns05wuccl::::res://Characters/Joanna/Idle/Idle3.png<>uid://dhsiqxtihs4rj::::res://Characters/Joanna/Idle/Idle1.png<>uid://cvxhs6hky2be6::::res://Characters/Joanna/Idle/Idle4.png<>res://Scenes/Label.gd<>uid://41oryr1571kp::::res://Characters/Joanna/Idle/Idle5.png<>uid://cldhoay1fyxrj::::res://Scenes/heal_potion.tscn<>uid://eukxfk8ehj6j::::res://Characters/Joanna/Idle/Idle6.png<>uid://7dry6iv1rvtb::::res://Decorations/Castle/bag_1.png<>uid://mds57wkyswia::::res://Decorations/Castle/bag_2.png<>uid://wy77brxldf4p::::res://Decorations/Animated Decorations/torch_small/torch_small_6.png<>uid://x36f2uuo3cut::::res://Decorations/Animated Decorations/torch_small/torch_small_1.png<>uid://c4ct1k6sevt8u::::res://Decorations/Animated Decorations/torch_small/torch_small_2.png<>uid://bjier1rtepu5v::::res://Decorations/Animated Decorations/torch_small/torch_small_3.png<>uid://cm0cpb3ruwjvt::::res://Decorations/Animated Decorations/torch_small/torch_small_4.png<>uid://cxeop3hyn45p::::res://Decorations/Animated Decorations/torch_small/torch_small_5.png
+node_2d.tscn::PackedScene::1726867411202997221::1710394622::0::1::::<><>::uid://che456ghxf3fr::::res://Scenes/player.tscn<>res://Scenes/node_2d.gd<>uid://tqbsarawjpkq::::res://Tiles/Castle/floor_tile_3.png<>uid://bccpk4kg1cwq0::::res://Tiles/oak_wood/oak_woods_tileset.png<>uid://bdd4ayxuwu5ub::::res://Decorations/oak_wood/fence_1.png<>uid://dopj1ct6iibax::::res://Decorations/oak_wood/shop.png<>uid://cq1hkm768ric6::::res://Decorations/oak_wood/fence_2.png<>uid://d2fvkidvj1cyj::::res://Decorations/oak_wood/sign.png<>uid://dwgt37wclc7ia::::res://Background/oak_wood/background_layer_1.png<>uid://bf1386hi8jbl0::::res://Background/oak_wood/background_layer_2.png<>uid://d2q7q4d0fxkyd::::res://Decorations/oak_wood/rock_3.png<>uid://snu2udydmmr0::::res://Decorations/oak_wood/lamp.png<>uid://k7jdnm701q0f::::res://Background/oak_wood/background_layer_3.png<>uid://dr07s5uah3k74::::res://Decorations/oak_wood/rock_2.png<>uid://pp07bp0arlak::::res://Scenes/skeleton.tscn<>uid://drlj1no23x63j::::res://HUD/bar_background.png<>uid://c4agbm3ntb2i::::res://HUD/bar.png<>uid://c7p0keui0cbvl::::res://Scenes/wizard.tscn<>uid://dnqfdk38mtml7::::res://HUD/health_bar.png<>uid://fth68n4agvcy::::res://Characters/Joanna/Idle/Idle2.png<>uid://dip1ns05wuccl::::res://Characters/Joanna/Idle/Idle3.png<>uid://dhsiqxtihs4rj::::res://Characters/Joanna/Idle/Idle1.png<>uid://cvxhs6hky2be6::::res://Characters/Joanna/Idle/Idle4.png<>res://Scenes/Label.gd<>uid://41oryr1571kp::::res://Characters/Joanna/Idle/Idle5.png<>uid://cldhoay1fyxrj::::res://Scenes/heal_potion.tscn<>uid://eukxfk8ehj6j::::res://Characters/Joanna/Idle/Idle6.png<>uid://7dry6iv1rvtb::::res://Decorations/Castle/bag_1.png<>uid://mds57wkyswia::::res://Decorations/Castle/bag_2.png<>uid://wy77brxldf4p::::res://Decorations/Animated Decorations/torch_small/torch_small_6.png<>uid://x36f2uuo3cut::::res://Decorations/Animated Decorations/torch_small/torch_small_1.png<>uid://c4ct1k6sevt8u::::res://Decorations/Animated Decorations/torch_small/torch_small_2.png<>uid://bjier1rtepu5v::::res://Decorations/Animated Decorations/torch_small/torch_small_3.png<>uid://cm0cpb3ruwjvt::::res://Decorations/Animated Decorations/torch_small/torch_small_4.png<>uid://cxeop3hyn45p::::res://Decorations/Animated Decorations/torch_small/torch_small_5.png
 ParallaxBackground.gd::GDScript::-1::1710302697::0::1::::<>ParallaxBackground<>::
 player.gd::GDScript::-1::1710302699::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::5274236788317735971::1710315333::0::1::::<><>::res://Scenes/player.gd<>uid://cg8q4igwh1bi1::::res://Characters/knight/attack/_Attack2.png<>uid://qc35s6aoqf4u::::res://Characters/knight/attack/_Attack.png<>uid://c1nybmnl3d2xl::::res://Characters/knight/death/_Death.png<>uid://dlqx1hmetwcth::::res://Characters/knight/jump/_JumpFallInbetween.png<>uid://ijgbx6u87mss::::res://Characters/knight/jump/_Jump.png<>uid://cujoljd8lioml::::res://Characters/knight/idle/_Idle.png<>uid://cxl3opl4k5c6d::::res://Characters/knight/run/_Run.png<>uid://dbsqxwuyqhn4e::::res://Characters/knight/roll/_Roll.png<>uid://dtpdoxsopjdmv::::res://Characters/knight/slide/_SlideFull.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
+player.tscn::PackedScene::5274236788317735971::1710394623::0::1::::<><>::res://Scenes/player.gd<>uid://cg8q4igwh1bi1::::res://Characters/knight/attack/_Attack2.png<>uid://qc35s6aoqf4u::::res://Characters/knight/attack/_Attack.png<>uid://c1nybmnl3d2xl::::res://Characters/knight/death/_Death.png<>uid://dlqx1hmetwcth::::res://Characters/knight/jump/_JumpFallInbetween.png<>uid://ijgbx6u87mss::::res://Characters/knight/jump/_Jump.png<>uid://cujoljd8lioml::::res://Characters/knight/idle/_Idle.png<>uid://cxl3opl4k5c6d::::res://Characters/knight/run/_Run.png<>uid://dbsqxwuyqhn4e::::res://Characters/knight/roll/_Roll.png<>uid://dtpdoxsopjdmv::::res://Characters/knight/slide/_SlideFull.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
 signals.gd::GDScript::-1::1710302699::0::1::::<>Node<>::
-skeleton.gd::GDScript::-1::1710305767::0::1::::<>CharacterBody2D<>::
-skeleton.tscn::PackedScene::1085373467937483550::1710315333::0::1::::<><>::uid://px1m0orlsgdb::::res://Characters/skeleton/Idle.png<>uid://bl6rtikco8wu7::::res://Characters/skeleton/Death.png<>uid://bneqarmw3xrhg::::res://Characters/skeleton/Walk.png<>uid://blkd81u5cm2d1::::res://Characters/skeleton/Attack.png<>uid://bucvfmi7bvqpa::::res://Characters/skeleton/Take Hit.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
-test_bg.tscn::PackedScene::1413592989732689141::1710315333::0::1::::<><>::res://Scenes/Background_test_bg.gd<>uid://dh17dvkd78o5n::::res://Background/layer_1.png<>uid://cidla4y1rux18::::res://Background/layer_2.png<>uid://df5wb1egjiivj::::res://Background/layer_3.png
+skeleton.gd::GDScript::-1::1710393225::0::1::::<>CharacterBody2D<>::
+skeleton.tscn::PackedScene::1085373467937483550::1710394623::0::1::::<><>::uid://px1m0orlsgdb::::res://Characters/skeleton/Idle.png<>uid://bl6rtikco8wu7::::res://Characters/skeleton/Death.png<>uid://bneqarmw3xrhg::::res://Characters/skeleton/Walk.png<>uid://blkd81u5cm2d1::::res://Characters/skeleton/Attack.png<>uid://bucvfmi7bvqpa::::res://Characters/skeleton/Take Hit.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
+test_bg.tscn::PackedScene::1413592989732689141::1710394623::0::1::::<><>::res://Scenes/Background_test_bg.gd<>uid://dh17dvkd78o5n::::res://Background/layer_1.png<>uid://cidla4y1rux18::::res://Background/layer_2.png<>uid://df5wb1egjiivj::::res://Background/layer_3.png
 Wizard.gd::GDScript::-1::1710302697::0::1::::<>CharacterBody2D<>::
-wizard.tscn::PackedScene::7051386054258806777::1710315333::0::1::::<><>::res://Scenes/Wizard.gd<>uid://dkqfucsmok04q::::res://Scenes/fireball.tscn<>uid://dvxp0jcsgsekn::::res://Characters/Enemy-death.png<>uid://c4su3h8unda2::::res://Characters/wizard/wizard-fireball.png<>uid://bgv1ftx5lkdmo::::res://Characters/wizard/wizard.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
-::res://Tiles/::1710302715
-::res://Tiles/Castle/::1710302715
+wizard.tscn::PackedScene::7051386054258806777::1710394623::0::1::::<><>::res://Scenes/Wizard.gd<>uid://dkqfucsmok04q::::res://Scenes/fireball.tscn<>uid://dvxp0jcsgsekn::::res://Characters/Enemy-death.png<>uid://c4su3h8unda2::::res://Characters/wizard/wizard-fireball.png<>uid://bgv1ftx5lkdmo::::res://Characters/wizard/wizard.png<>uid://c0oxfbixim7ic::::res://Scenes/damage_box.tscn
+::res://Tiles/::1710341839
+::res://Tiles/Castle/::1710341839
 arch_1.png::CompressedTexture2D::4081251842280657255::1710302699::1710302699::1::::<><>::
 arch_2.png::CompressedTexture2D::415382285568236608::1710302699::1710302699::1::::<><>::
 arch_3.png::CompressedTexture2D::6577683906586937746::1710302699::1710302699::1::::<><>::
@@ -631,5 +631,5 @@ window_small_2.png::CompressedTexture2D::3363448367853160053::1710302715::171030
 window_tall_1.png::CompressedTexture2D::213959037609248366::1710302715::1710302715::1::::<><>::
 window_tall_2.png::CompressedTexture2D::2608519668112224061::1710302715::1710302715::1::::<><>::
 window_tall_3.png::CompressedTexture2D::4793748606220757856::1710302715::1710302715::1::::<><>::
-::res://Tiles/oak_wood/::1710302715
+::res://Tiles/oak_wood/::1710341839
 oak_woods_tileset.png::CompressedTexture2D::2531857278240491521::1710302715::1710302715::1::::<><>::
