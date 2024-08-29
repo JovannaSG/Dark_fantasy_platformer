@@ -6,4 +6,4 @@
 
 Трейлер игры
 
-https://github.com/JovannaSG/Dark_fantasy_platformer/assets/67232473/47e8d181-b255-46fe-82a6-ae1bdb3cb90e
+https://github.com/user-attachments/assets/7c69ac65-b174-454c-bcd2-ccc9c163f8ca
